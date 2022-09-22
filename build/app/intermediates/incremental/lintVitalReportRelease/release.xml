@@ -1,0 +1,40 @@
+<variant
+    name="release"
+    package="estibafy.com.estibafy_user"
+    minSdkVersion="22"
+    targetSdkVersion="31"
+    shrinking="true"
+    mergedManifest="/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/app/intermediates/merged_manifest/release/AndroidManifest.xml"
+    manifestMergeReport="/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/app/outputs/logs/manifest-merger-release-report.txt"
+    proguardFiles="/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/app/intermediates/default_proguard_files/global/proguard-android.txt-7.2.1:/Users/laptopwala/Developer/flutter/packages/flutter_tools/gradle/flutter_proguard_rules.pro:proguard-rules.pro"
+    partialResultsDir="/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/app/intermediates/lint_vital_partial_results/release/out">
+  <buildFeatures
+      namespacing="REQUIRED"/>
+  <sourceProviders>
+    <sourceProvider
+        manifest="src/main/AndroidManifest.xml"
+        javaDirectories="src/main/java:src/main/kotlin"
+        resDirectories="src/main/res"
+        assetsDirectories="src/main/assets"/>
+    <sourceProvider
+        manifest="src/release/AndroidManifest.xml"
+        javaDirectories="src/release/java:src/release/kotlin"
+        resDirectories="src/release/res"
+        assetsDirectories="src/release/assets"/>
+  </sourceProviders>
+  <testSourceProviders>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <manifestPlaceholders>
+    <placeholder
+        name="applicationName"
+        value="android.app.Application" />
+  </manifestPlaceholders>
+  <mainArtifact
+      classOutputs="/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/app/intermediates/javac/release/classes:/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/app/tmp/kotlin-classes/release:/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/app/kotlinToolingMetadata:/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/app/intermediates/compile_and_runtime_not_namespaced_r_class_jar/release/R.jar"
+      applicationId="estibafy.com.estibafy_user"
+      generatedSourceFolders="/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/app/generated/source/buildConfig/release:/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/app/generated/aidl_source_output_dir/release/out:/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/app/generated/renderscript_source_output_dir/release/out:/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/app/generated/ap_generated_sources/release/out"
+      generatedResourceFolders="/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/app/generated/res/rs/release:/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/app/generated/res/resValues/release">
+  </mainArtifact>
+</variant>

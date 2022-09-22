@@ -1,0 +1,756 @@
+-- Merging decision tree log ---
+application
+INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:24:4-63:19
+MERGED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-46:19
+MERGED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-46:19
+MERGED from [:firebase_core] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_core] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-15:19
+MERGED from [:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-17:19
+MERGED from [:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-17:19
+MERGED from [:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-19:19
+MERGED from [:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-19:19
+MERGED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:15:5-29:19
+MERGED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:15:5-29:19
+MERGED from [:url_launcher_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-14:19
+MERGED from [:url_launcher_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-14:19
+MERGED from [:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-24:19
+MERGED from [:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-24:19
+MERGED from [:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:12:5-18:19
+MERGED from [:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:12:5-18:19
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:24:5-31:19
+MERGED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:31:5-60:19
+MERGED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:31:5-60:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.5] /Users/laptopwala/.gradle/caches/transforms-3/fb1990b5771d0897d4f98a6b88bf5691/transformed/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.5] /Users/laptopwala/.gradle/caches/transforms-3/fb1990b5771d0897d4f98a6b88bf5691/transformed/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-location:20.0.0] /Users/laptopwala/.gradle/caches/transforms-3/68bbfac03dd844d11506fda2e2709f68/transformed/jetified-play-services-location-20.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:20.0.0] /Users/laptopwala/.gradle/caches/transforms-3/68bbfac03dd844d11506fda2e2709f68/transformed/jetified-play-services-location-20.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/90ef692600ffd86d39c9c8c20f1c1b6f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/90ef692600ffd86d39c9c8c20f1c1b6f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/laptopwala/.gradle/caches/transforms-3/7beb45604d2581e8694d3d903500c1bc/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/laptopwala/.gradle/caches/transforms-3/7beb45604d2581e8694d3d903500c1bc/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/3cf3fd16267a8b2e93c703121421ebcb/transformed/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/3cf3fd16267a8b2e93c703121421ebcb/transformed/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/laptopwala/.gradle/caches/transforms-3/143263fba841cfe5e82b478e3231f216/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/laptopwala/.gradle/caches/transforms-3/143263fba841cfe5e82b478e3231f216/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/laptopwala/.gradle/caches/transforms-3/8495713d7506f3ea9d1bd99f2e04db84/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/laptopwala/.gradle/caches/transforms-3/8495713d7506f3ea9d1bd99f2e04db84/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/laptopwala/.gradle/caches/transforms-3/af433a4c1a795369a73a262ab2bd7347/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/laptopwala/.gradle/caches/transforms-3/af433a4c1a795369a73a262ab2bd7347/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.core:core:1.8.0] /Users/laptopwala/.gradle/caches/transforms-3/8d94b2d4c968cccf93c023125f36ce07/transformed/core-1.8.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0] /Users/laptopwala/.gradle/caches/transforms-3/8d94b2d4c968cccf93c023125f36ce07/transformed/core-1.8.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/laptopwala/.gradle/caches/transforms-3/94d5455906c8df34755a223e04bb7343/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/laptopwala/.gradle/caches/transforms-3/94d5455906c8df34755a223e04bb7343/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:25:5-39:19
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] /Users/laptopwala/.gradle/caches/transforms-3/9d83b6f97d3df4a571fe3ed9b0b454cd/transformed/jetified-threetenabp-1.2.3/AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] /Users/laptopwala/.gradle/caches/transforms-3/9d83b6f97d3df4a571fe3ed9b0b454cd/transformed/jetified-threetenabp-1.2.3/AndroidManifest.xml:7:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.8.0] /Users/laptopwala/.gradle/caches/transforms-3/8d94b2d4c968cccf93c023125f36ce07/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:25:9-38
+	android:icon
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:27:9-43
+	android:name
+		INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:26:9-42
+manifest
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:1:1-64:12
+INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:1:1-64:12
+INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:1:1-64:12
+INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:1:1-64:12
+MERGED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-48:12
+MERGED from [:firebase_core] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-17:12
+MERGED from [:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-19:12
+MERGED from [:google_maps_flutter_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/google_maps_flutter_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-21:12
+MERGED from [:flutter_plugin_android_lifecycle] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-31:12
+MERGED from [:url_launcher_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-16:12
+MERGED from [:path_provider_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/path_provider_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:flutter_native_splash] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_native_splash/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:shared_preferences_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/shared_preferences_android/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-26:12
+MERGED from [:flutter_keyboard_visibility] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_keyboard_visibility/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:fluttertoast] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/fluttertoast/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:device_info_plus] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/device_info_plus/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-20:12
+MERGED from [:dismiss_keyboard_on_tap] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/dismiss_keyboard_on_tap/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/8ed68306783030c7ca2d79ae532f6c50/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:17:1-33:12
+MERGED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:17:1-62:12
+MERGED from [com.google.firebase:firebase-datatransport:18.1.5] /Users/laptopwala/.gradle/caches/transforms-3/fb1990b5771d0897d4f98a6b88bf5691/transformed/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:15:1-40:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/d62e54e24dbc746dc46d41c73a383143/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.1.0] /Users/laptopwala/.gradle/caches/transforms-3/643c91ad2cd70fc9a87f2635da79dd02/transformed/media-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.3.2] /Users/laptopwala/.gradle/caches/transforms-3/20ebf293ac71ea590913696109e4e33f/transformed/jetified-core-ktx-1.3.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:17:1-44:12
+MERGED from [com.google.android.gms:play-services-location:20.0.0] /Users/laptopwala/.gradle/caches/transforms-3/68bbfac03dd844d11506fda2e2709f68/transformed/jetified-play-services-location-20.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/90ef692600ffd86d39c9c8c20f1c1b6f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/591c745b99a215c61a503832448edd0d/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/laptopwala/.gradle/caches/transforms-3/7beb45604d2581e8694d3d903500c1bc/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/79c368445c7d02de3298c1534f6d5164/transformed/jetified-firebase-installations-interop-17.0.1/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/3cf3fd16267a8b2e93c703121421ebcb/transformed/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/laptopwala/.gradle/caches/transforms-3/143263fba841cfe5e82b478e3231f216/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/laptopwala/.gradle/caches/transforms-3/8495713d7506f3ea9d1bd99f2e04db84/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/laptopwala/.gradle/caches/transforms-3/af433a4c1a795369a73a262ab2bd7347/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/laptopwala/.gradle/caches/transforms-3/641e0a823a173e1a196201d5f8710bf5/transformed/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/1332cfc0a06fbbb31d97eafc7e815ee1/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/7c2a69963f268b347cc286e5cbaa794a/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/5f6bce248354caebdb0537d0d522a083/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/62fe94634af4c7176027a843a248a0b7/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/dac979fc590ab367189c3a62483ce9cd/transformed/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/4ab025d3928b68f758a64f199f918d25/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/bbe842140b0a02ee44fbb7cda433aff4/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/cf2ef0b7e0a7c2f7d84821efc168950d/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/e2f5c3080c44cb29cc0dec64678f8048/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/57e5e26ad3745b98eeb78643e3d989b4/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/8542c3cb8fe7f6d300e3b74122e0e39f/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.8.0] /Users/laptopwala/.gradle/caches/transforms-3/8d94b2d4c968cccf93c023125f36ce07/transformed/core-1.8.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/laptopwala/.gradle/caches/transforms-3/206af533dbbee7b62b03e6f581632f32/transformed/exifinterface-1.3.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/62e158e431b90e31f1313fb92114e5fb/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/3ddb49b1a932d12e839cb42d86eaf5c0/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/laptopwala/.gradle/caches/transforms-3/762cc038ea7e6ff959c5d419acded8b5/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/laptopwala/.gradle/caches/transforms-3/94d5455906c8df34755a223e04bb7343/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/laptopwala/.gradle/caches/transforms-3/e2ae4371039870c7a2bd8e96676b23bd/transformed/jetified-transport-api-3.0.0/AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/laptopwala/.gradle/caches/transforms-3/3c1a1353a4bce8eb54c6e0a700c943b6/transformed/jetified-firebase-components-17.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/laptopwala/.gradle/caches/transforms-3/0907b1e9e47a87055691d3602a8d7b88/transformed/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/b92d4f4e51aa288327927fb1d1722068/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/laptopwala/.gradle/caches/transforms-3/01861c60b10afa4f2febfe01aff0ec46/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/laptopwala/.gradle/caches/transforms-3/94905b64c3f83a7cf1cc7722363b3a8c/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/laptopwala/.gradle/caches/transforms-3/38858dedb5c4483b6af1a1eea17bce95/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/6917b917f46acc225f80c644a8b10e80/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/9eac3243e07281a6c670785baad86a60/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/0423c5e6d4ab6860aa8181d77b78be44/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/647c1e081ff4bc82028f4a31ac59770a/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/laptopwala/.gradle/caches/transforms-3/4ee058c39e84f854404b6cff34b16d9f/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] /Users/laptopwala/.gradle/caches/transforms-3/9d83b6f97d3df4a571fe3ed9b0b454cd/transformed/jetified-threetenabp-1.2.3/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/laptopwala/.gradle/caches/transforms-3/21d2a332cac1b039cfd7337048ae1658/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:1:1-64:12
+INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:1:1-64:12
+INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:1:1-64:12
+	package
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:2:5-41
+		INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:1:1-64:12
+		INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:1:1-64:12
+		INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:3:5-66
+MERGED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-67
+MERGED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/591c745b99a215c61a503832448edd0d/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/591c745b99a215c61a503832448edd0d/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:3:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:4:5-78
+MERGED from [:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-79
+MERGED from [:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:4:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:5:5-80
+MERGED from [:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-81
+MERGED from [:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:5:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:6:5-79
+MERGED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-79
+MERGED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-79
+MERGED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/591c745b99a215c61a503832448edd0d/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/591c745b99a215c61a503832448edd0d/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:6:22-76
+queries
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:9:5-22:15
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:30:5-34:15
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:30:5-34:15
+intent#action:name:android.intent.action.VIEW+data:scheme:https
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:10:9-13:18
+action#android.intent.action.VIEW
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:11:13-65
+	android:name
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:11:21-62
+data
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:12:13-44
+	android:scheme
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:12:19-41
+intent#action:name:android.intent.action.DIAL+data:scheme:tel
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:14:9-17:18
+action#android.intent.action.DIAL
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:15:13-65
+	android:name
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:15:21-62
+intent#action:name:android.intent.action.SENDTO+data:scheme:smsto
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:18:9-21:18
+action#android.intent.action.SENDTO
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:19:13-67
+	android:name
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:19:21-64
+uses-sdk
+INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+MERGED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_core] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:firebase_core] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:google_maps_flutter_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/google_maps_flutter_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:google_maps_flutter_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/google_maps_flutter_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_plugin_android_lifecycle] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_plugin_android_lifecycle] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_plugin_android_lifecycle/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:url_launcher_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:url_launcher_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/path_provider_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/path_provider_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_native_splash] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_native_splash/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_native_splash] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_native_splash/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/shared_preferences_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:shared_preferences_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/shared_preferences_android/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:6:5-8:41
+MERGED from [:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:6:5-8:41
+MERGED from [:flutter_keyboard_visibility] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_keyboard_visibility/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_keyboard_visibility] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_keyboard_visibility/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:fluttertoast] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/fluttertoast/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:fluttertoast] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/fluttertoast/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:device_info_plus] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/device_info_plus/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:device_info_plus] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/device_info_plus/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:dismiss_keyboard_on_tap] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/dismiss_keyboard_on_tap/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:dismiss_keyboard_on_tap] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/dismiss_keyboard_on_tap/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/8ed68306783030c7ca2d79ae532f6c50/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/8ed68306783030c7ca2d79ae532f6c50/transformed/jetified-window-java-1.0.0-beta04/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:21:5-23:41
+MERGED from [com.google.firebase:firebase-datatransport:18.1.5] /Users/laptopwala/.gradle/caches/transforms-3/fb1990b5771d0897d4f98a6b88bf5691/transformed/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:18.1.5] /Users/laptopwala/.gradle/caches/transforms-3/fb1990b5771d0897d4f98a6b88bf5691/transformed/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/d62e54e24dbc746dc46d41c73a383143/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/d62e54e24dbc746dc46d41c73a383143/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.1.0] /Users/laptopwala/.gradle/caches/transforms-3/643c91ad2cd70fc9a87f2635da79dd02/transformed/media-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.1.0] /Users/laptopwala/.gradle/caches/transforms-3/643c91ad2cd70fc9a87f2635da79dd02/transformed/media-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.3.2] /Users/laptopwala/.gradle/caches/transforms-3/20ebf293ac71ea590913696109e4e33f/transformed/jetified-core-ktx-1.3.2/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.3.2] /Users/laptopwala/.gradle/caches/transforms-3/20ebf293ac71ea590913696109e4e33f/transformed/jetified-core-ktx-1.3.2/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:20.0.0] /Users/laptopwala/.gradle/caches/transforms-3/68bbfac03dd844d11506fda2e2709f68/transformed/jetified-play-services-location-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:20.0.0] /Users/laptopwala/.gradle/caches/transforms-3/68bbfac03dd844d11506fda2e2709f68/transformed/jetified-play-services-location-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/90ef692600ffd86d39c9c8c20f1c1b6f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/90ef692600ffd86d39c9c8c20f1c1b6f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/591c745b99a215c61a503832448edd0d/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/591c745b99a215c61a503832448edd0d/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/laptopwala/.gradle/caches/transforms-3/7beb45604d2581e8694d3d903500c1bc/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] /Users/laptopwala/.gradle/caches/transforms-3/7beb45604d2581e8694d3d903500c1bc/transformed/jetified-firebase-iid-interop-17.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/79c368445c7d02de3298c1534f6d5164/transformed/jetified-firebase-installations-interop-17.0.1/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/79c368445c7d02de3298c1534f6d5164/transformed/jetified-firebase-installations-interop-17.0.1/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/3cf3fd16267a8b2e93c703121421ebcb/transformed/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/3cf3fd16267a8b2e93c703121421ebcb/transformed/jetified-play-services-tasks-18.0.1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/laptopwala/.gradle/caches/transforms-3/143263fba841cfe5e82b478e3231f216/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] /Users/laptopwala/.gradle/caches/transforms-3/143263fba841cfe5e82b478e3231f216/transformed/jetified-play-services-stats-17.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/laptopwala/.gradle/caches/transforms-3/8495713d7506f3ea9d1bd99f2e04db84/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] /Users/laptopwala/.gradle/caches/transforms-3/8495713d7506f3ea9d1bd99f2e04db84/transformed/jetified-firebase-measurement-connector-19.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/laptopwala/.gradle/caches/transforms-3/af433a4c1a795369a73a262ab2bd7347/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] /Users/laptopwala/.gradle/caches/transforms-3/af433a4c1a795369a73a262ab2bd7347/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/laptopwala/.gradle/caches/transforms-3/641e0a823a173e1a196201d5f8710bf5/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/laptopwala/.gradle/caches/transforms-3/641e0a823a173e1a196201d5f8710bf5/transformed/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/1332cfc0a06fbbb31d97eafc7e815ee1/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/1332cfc0a06fbbb31d97eafc7e815ee1/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/7c2a69963f268b347cc286e5cbaa794a/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/7c2a69963f268b347cc286e5cbaa794a/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/5f6bce248354caebdb0537d0d522a083/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/5f6bce248354caebdb0537d0d522a083/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/62fe94634af4c7176027a843a248a0b7/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/62fe94634af4c7176027a843a248a0b7/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/dac979fc590ab367189c3a62483ce9cd/transformed/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/dac979fc590ab367189c3a62483ce9cd/transformed/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/4ab025d3928b68f758a64f199f918d25/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/4ab025d3928b68f758a64f199f918d25/transformed/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/bbe842140b0a02ee44fbb7cda433aff4/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/bbe842140b0a02ee44fbb7cda433aff4/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/cf2ef0b7e0a7c2f7d84821efc168950d/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/cf2ef0b7e0a7c2f7d84821efc168950d/transformed/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/e2f5c3080c44cb29cc0dec64678f8048/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/e2f5c3080c44cb29cc0dec64678f8048/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/57e5e26ad3745b98eeb78643e3d989b4/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/57e5e26ad3745b98eeb78643e3d989b4/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/8542c3cb8fe7f6d300e3b74122e0e39f/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/8542c3cb8fe7f6d300e3b74122e0e39f/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.8.0] /Users/laptopwala/.gradle/caches/transforms-3/8d94b2d4c968cccf93c023125f36ce07/transformed/core-1.8.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] /Users/laptopwala/.gradle/caches/transforms-3/8d94b2d4c968cccf93c023125f36ce07/transformed/core-1.8.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/laptopwala/.gradle/caches/transforms-3/206af533dbbee7b62b03e6f581632f32/transformed/exifinterface-1.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/laptopwala/.gradle/caches/transforms-3/206af533dbbee7b62b03e6f581632f32/transformed/exifinterface-1.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/62e158e431b90e31f1313fb92114e5fb/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/62e158e431b90e31f1313fb92114e5fb/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/3ddb49b1a932d12e839cb42d86eaf5c0/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/3ddb49b1a932d12e839cb42d86eaf5c0/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/laptopwala/.gradle/caches/transforms-3/762cc038ea7e6ff959c5d419acded8b5/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/laptopwala/.gradle/caches/transforms-3/762cc038ea7e6ff959c5d419acded8b5/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/laptopwala/.gradle/caches/transforms-3/94d5455906c8df34755a223e04bb7343/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/laptopwala/.gradle/caches/transforms-3/94d5455906c8df34755a223e04bb7343/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/laptopwala/.gradle/caches/transforms-3/e2ae4371039870c7a2bd8e96676b23bd/transformed/jetified-transport-api-3.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] /Users/laptopwala/.gradle/caches/transforms-3/e2ae4371039870c7a2bd8e96676b23bd/transformed/jetified-transport-api-3.0.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/laptopwala/.gradle/caches/transforms-3/3c1a1353a4bce8eb54c6e0a700c943b6/transformed/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] /Users/laptopwala/.gradle/caches/transforms-3/3c1a1353a4bce8eb54c6e0a700c943b6/transformed/jetified-firebase-components-17.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/laptopwala/.gradle/caches/transforms-3/0907b1e9e47a87055691d3602a8d7b88/transformed/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] /Users/laptopwala/.gradle/caches/transforms-3/0907b1e9e47a87055691d3602a8d7b88/transformed/jetified-firebase-encoders-json-18.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/b92d4f4e51aa288327927fb1d1722068/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/b92d4f4e51aa288327927fb1d1722068/transformed/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/laptopwala/.gradle/caches/transforms-3/01861c60b10afa4f2febfe01aff0ec46/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/laptopwala/.gradle/caches/transforms-3/01861c60b10afa4f2febfe01aff0ec46/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/laptopwala/.gradle/caches/transforms-3/94905b64c3f83a7cf1cc7722363b3a8c/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/laptopwala/.gradle/caches/transforms-3/94905b64c3f83a7cf1cc7722363b3a8c/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/laptopwala/.gradle/caches/transforms-3/38858dedb5c4483b6af1a1eea17bce95/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/laptopwala/.gradle/caches/transforms-3/38858dedb5c4483b6af1a1eea17bce95/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/6917b917f46acc225f80c644a8b10e80/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/6917b917f46acc225f80c644a8b10e80/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/9eac3243e07281a6c670785baad86a60/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/9eac3243e07281a6c670785baad86a60/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/0423c5e6d4ab6860aa8181d77b78be44/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/0423c5e6d4ab6860aa8181d77b78be44/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/647c1e081ff4bc82028f4a31ac59770a/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/laptopwala/.gradle/caches/transforms-3/647c1e081ff4bc82028f4a31ac59770a/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/laptopwala/.gradle/caches/transforms-3/4ee058c39e84f854404b6cff34b16d9f/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/laptopwala/.gradle/caches/transforms-3/4ee058c39e84f854404b6cff34b16d9f/transformed/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] /Users/laptopwala/.gradle/caches/transforms-3/9d83b6f97d3df4a571fe3ed9b0b454cd/transformed/jetified-threetenabp-1.2.3/AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] /Users/laptopwala/.gradle/caches/transforms-3/9d83b6f97d3df4a571fe3ed9b0b454cd/transformed/jetified-threetenabp-1.2.3/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/laptopwala/.gradle/caches/transforms-3/21d2a332cac1b039cfd7337048ae1658/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/laptopwala/.gradle/caches/transforms-3/21d2a332cac1b039cfd7337048ae1658/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:28:8-29:69
+	android:value
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:29:12-67
+	android:name
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:28:19-64
+activity#estibafy.com.estibafy_user.MainActivity
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:31:9-52:20
+	android:launchMode
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:34:13-43
+	android:hardwareAccelerated
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:37:13-47
+	android:windowSoftInputMode
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:38:13-55
+	android:exported
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:33:13-36
+	android:configChanges
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:36:13-163
+	android:theme
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:35:13-47
+	android:name
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:32:13-41
+meta-data#io.flutter.embedding.android.NormalTheme
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:43:13-46:17
+	android:resource
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:45:15-52
+	android:name
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:44:15-70
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:47:13-50:29
+action#android.intent.action.MAIN
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:48:17-68
+	android:name
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:48:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:49:17-76
+	android:name
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:49:27-74
+meta-data#flutterEmbedding
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:55:9-57:33
+	android:value
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:57:13-30
+	android:name
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:56:13-44
+meta-data#com.google.firebase.messaging.default_notification_channel_id
+ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:58:8-60:54
+	android:value
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:60:12-51
+	android:name
+		ADDED from /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:59:12-88
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-68
+MERGED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:27:5-68
+MERGED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:27:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/591c745b99a215c61a503832448edd0d/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/591c745b99a215c61a503832448edd0d/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:9:5-68
+	android:name
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-65
+service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService
+ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-17:72
+	android:exported
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-37
+	android:permission
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-69
+	android:name
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-107
+service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService
+ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:18:9-24:19
+	android:exported
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-37
+	android:name
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-97
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-23:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:17-78
+	android:name
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:25-75
+receiver#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver
+ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:26:9-33:20
+	android:exported
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:28:13-36
+	android:permission
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:29:13-73
+	android:name
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-98
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-32:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:17-81
+	android:name
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:25-78
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:35:9-39:19
+MERGED from [:firebase_core] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_core] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-14:19
+MERGED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:53:9-59:19
+MERGED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:53:9-59:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.5] /Users/laptopwala/.gradle/caches/transforms-3/fb1990b5771d0897d4f98a6b88bf5691/transformed/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:18.1.5] /Users/laptopwala/.gradle/caches/transforms-3/fb1990b5771d0897d4f98a6b88bf5691/transformed/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:33:9-37:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:55:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:35:18-89
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:37:17-128
+provider#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider
+ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:41:9-45:38
+	android:authorities
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:43:13-88
+	android:exported
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:44:13-37
+	android:initOrder
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:45:13-35
+	android:name
+		ADDED from [:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:42:13-102
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
+ADDED from [:firebase_core] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-13:85
+	android:value
+		ADDED from [:firebase_core] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:13:17-82
+	android:name
+		ADDED from [:firebase_core] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:12:17-124
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from [:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-77
+	android:name
+		ADDED from [:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-74
+service#com.baseflow.geolocator.GeolocatorLocationService
+ADDED from [:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-16:56
+	android:enabled
+		ADDED from [:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-35
+	android:exported
+		ADDED from [:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-37
+	android:foregroundServiceType
+		ADDED from [:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-53
+	android:name
+		ADDED from [:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-77
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+	android:grantUriPermissions
+		ADDED from [:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+	android:authorities
+		ADDED from [:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-74
+	android:exported
+		ADDED from [:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+	android:name
+		ADDED from [:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:75
+	android:resource
+		ADDED from [:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-72
+	android:name
+		ADDED from [:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-66
+	android:name
+		ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-63
+uses-permission#android.permission.USE_FULL_SCREEN_INTENT
+ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-78
+uses-permission#android.permission.SCHEDULE_EXACT_ALARM
+ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:12:22-76
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-77
+MERGED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:26:5-77
+MERGED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:26:5-77
+	android:name
+		ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:13:22-74
+receiver#com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver
+ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:16:9-18:40
+	android:exported
+		ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-97
+receiver#com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver
+ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:19:9-28:20
+	android:exported
+		ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-101
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.MY_PACKAGE_REPLACED+action:name:android.intent.action.QUICKBOOT_POWERON+action:name:com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-27:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:23:17-79
+	android:name
+		ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:23:25-76
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:24:17-84
+	android:name
+		ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:24:25-81
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:25:17-82
+	android:name
+		ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:25:25-79
+action#com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:26:17-82
+	android:name
+		ADDED from [:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/release/AndroidManifest.xml:26:25-79
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-13:74
+	android:exported
+		ADDED from [:url_launcher_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
+	android:theme
+		ADDED from [:url_launcher_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-71
+	android:name
+		ADDED from [:url_launcher_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-74
+uses-permission#android.permission.REQUEST_INSTALL_PACKAGES
+ADDED from [:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-83
+	android:name
+		ADDED from [:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-80
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from [:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-77
+provider#com.crazecoder.openfile.FileProvider
+ADDED from [:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-23:20
+	android:grantUriPermissions
+		ADDED from [:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-47
+	android:authorities
+		ADDED from [:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-88
+	android:exported
+		ADDED from [:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-37
+	tools:replace
+		ADDED from [:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-48
+	android:name
+		ADDED from [:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-64
+service#com.lyokone.location.FlutterLocationService
+ADDED from [:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:13:9-17:56
+	android:enabled
+		ADDED from [:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-35
+	android:exported
+		ADDED from [:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-37
+	android:foregroundServiceType
+		ADDED from [:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-53
+	android:name
+		ADDED from [:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-71
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:29:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/591c745b99a215c61a503832448edd0d/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/591c745b99a215c61a503832448edd0d/transformed/jetified-play-services-cloud-messaging-17.0.1/AndroidManifest.xml:11:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:29:22-79
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:32:9-39:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:34:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:35:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:33:13-78
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:45:9-52:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:48:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:47:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:46:13-82
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:56:13-58:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:58:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:57:17-119
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:18.1.5] /Users/laptopwala/.gradle/caches/transforms-3/fb1990b5771d0897d4f98a6b88bf5691/transformed/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:18.1.5] /Users/laptopwala/.gradle/caches/transforms-3/fb1990b5771d0897d4f98a6b88bf5691/transformed/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:18.1.5] /Users/laptopwala/.gradle/caches/transforms-3/fb1990b5771d0897d4f98a6b88bf5691/transformed/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:29:17-115
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:30:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:27:13-77
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+package#com.google.android.apps.maps
+ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/90ef692600ffd86d39c9c8c20f1c1b6f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/90ef692600ffd86d39c9c8c20f1c1b6f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/90ef692600ffd86d39c9c8c20f1c1b6f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/90ef692600ffd86d39c9c8c20f1c1b6f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:18.0.0] /Users/laptopwala/.gradle/caches/transforms-3/af433a4c1a795369a73a262ab2bd7347/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:18.0.0] /Users/laptopwala/.gradle/caches/transforms-3/af433a4c1a795369a73a262ab2bd7347/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:18.0.0] /Users/laptopwala/.gradle/caches/transforms-3/af433a4c1a795369a73a262ab2bd7347/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:33:13-132

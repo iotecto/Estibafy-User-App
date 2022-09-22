@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "estibafy.com.estibafy_user.app-mergeDebugResources-17:/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "/Users/laptopwala/.gradle/caches/transforms-3/8d94b2d4c968cccf93c023125f36ce07/transformed/core-1.8.0/res/values-pt/values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

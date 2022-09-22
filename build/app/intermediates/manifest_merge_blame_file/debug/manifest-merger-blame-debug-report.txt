@@ -1,0 +1,448 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="estibafy.com.estibafy_user"
+4    android:versionCode="2"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:3:5-66
+14-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:3:22-64
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:4:5-78
+15-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:4:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:5:5-80
+16-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:5:22-78
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Provide required visibility configuration for API level 30 and above -->
+17-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:6:5-79
+17-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:6:22-76
+18    <queries>
+18-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:9:5-22:15
+19        <intent>
+19-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:10:9-13:18
+20            <action android:name="android.intent.action.VIEW" />
+20-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:11:13-65
+20-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:11:21-62
+21
+22            <data android:scheme="https" />
+22-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:12:13-44
+22-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:12:19-41
+23        </intent>
+24        <intent>
+24-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:14:9-17:18
+25            <action android:name="android.intent.action.DIAL" />
+25-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:15:13-65
+25-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:15:21-62
+26
+27            <data android:scheme="tel" />
+27-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:12:13-44
+27-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:12:19-41
+28        </intent>
+29        <intent>
+29-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:18:9-21:18
+30            <action android:name="android.intent.action.SENDTO" />
+30-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:19:13-67
+30-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:19:21-64
+31
+32            <data android:scheme="smsto" />
+32-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:12:13-44
+32-->/Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/android/app/src/main/AndroidManifest.xml:12:19-41
+33        </intent>
+34        <!-- Needs to be explicitly declared on Android R+ -->
+35        <package android:name="com.google.android.apps.maps" />
+35-->[com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:9-64
+35-->[com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:33:18-61
+36    </queries>
+37
+38    <uses-permission android:name="android.permission.WAKE_LOCK" />
+38-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
+38-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
+39    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+39-->[:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-77
+39-->[:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-74
+40    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+40-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+40-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+41    <uses-permission android:name="android.permission.VIBRATE" />
+41-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
+41-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-63
+42    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+42-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
+42-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
+43    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+43-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-79
+43-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-76
+44    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+44-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
+44-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-74
+45    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+45-->[:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-83
+45-->[:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-80
+46    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+46-->[:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-80
+46-->[:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-77
+47    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+47-->[com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:29:5-82
+47-->[com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:29:22-79
+48
+49    <uses-feature
+49-->[com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:26:5-28:35
+50        android:glEsVersion="0x00020000"
+50-->[com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:27:9-41
+51        android:required="true" />
+51-->[com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:28:9-32
+52
+53    <application
+54        android:name="android.app.Application"
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.8.0] /Users/laptopwala/.gradle/caches/transforms-3/8d94b2d4c968cccf93c023125f36ce07/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+56        android:debuggable="true"
+57        android:icon="@mipmap/ic_launcher"
+58        android:label="Estibafy User" >
+59        <meta-data
+60            android:name="com.google.android.geo.API_KEY"
+61            android:value="AIzaSyCmX95L2PM9EGJv25LLQmwDLf5WGFv0e3U" />
+62
+63        <activity
+64            android:name="estibafy.com.estibafy_user.MainActivity"
+65            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+66            android:exported="true"
+67            android:hardwareAccelerated="true"
+68            android:launchMode="singleTop"
+69            android:theme="@style/LaunchTheme"
+70            android:windowSoftInputMode="adjustResize" >
+71
+72            <!--
+73                 Specifies an Android theme to apply to this Activity as soon as
+74                 the Android process has started. This theme is visible to the user
+75                 while the Flutter UI initializes. After that, this theme continues
+76                 to determine the Window background behind the Flutter UI.
+77            -->
+78            <meta-data
+79                android:name="io.flutter.embedding.android.NormalTheme"
+80                android:resource="@style/NormalTheme" />
+81
+82            <intent-filter>
+83                <action android:name="android.intent.action.MAIN" />
+84
+85                <category android:name="android.intent.category.LAUNCHER" />
+86            </intent-filter>
+87        </activity>
+88        <!--
+89             Don't delete the meta-data below.
+90             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+91        -->
+92        <meta-data
+93            android:name="flutterEmbedding"
+94            android:value="2" />
+95        <meta-data
+96            android:name="com.google.firebase.messaging.default_notification_channel_id"
+97            android:value="high_importance_channel" />
+98
+99        <service
+99-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-17:72
+100            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+100-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-107
+101            android:exported="false"
+101-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
+102            android:permission="android.permission.BIND_JOB_SERVICE" />
+102-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-69
+103        <service
+103-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-24:19
+104            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+104-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-97
+105            android:exported="false" >
+105-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-37
+106            <intent-filter>
+106-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:29
+107                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+107-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-78
+107-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:25-75
+108            </intent-filter>
+109        </service>
+110
+111        <receiver
+111-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:26:9-33:20
+112            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+112-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-98
+113            android:exported="true"
+113-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-36
+114            android:permission="com.google.android.c2dm.permission.SEND" >
+114-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-73
+115            <intent-filter>
+115-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-32:29
+116                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+116-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-81
+116-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-78
+117            </intent-filter>
+118        </receiver>
+119
+120        <service
+120-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:35:9-39:19
+121            android:name="com.google.firebase.components.ComponentDiscoveryService"
+121-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:35:18-89
+122            android:directBootAware="true"
+122-->[com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:35:13-43
+123            android:exported="false" >
+123-->[com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:55:13-37
+124            <meta-data
+124-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-38:85
+125                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+125-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:37:17-128
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:38:17-82
+127            <meta-data
+127-->[:firebase_core] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+128                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+128-->[:firebase_core] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[:firebase_core] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+130            <meta-data
+130-->[com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:56:13-58:85
+131                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+131-->[com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:57:17-119
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:58:17-82
+133            <meta-data
+133-->[com.google.firebase:firebase-datatransport:18.1.5] /Users/laptopwala/.gradle/caches/transforms-3/fb1990b5771d0897d4f98a6b88bf5691/transformed/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:28:13-30:85
+134                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+134-->[com.google.firebase:firebase-datatransport:18.1.5] /Users/laptopwala/.gradle/caches/transforms-3/fb1990b5771d0897d4f98a6b88bf5691/transformed/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:29:17-115
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.firebase:firebase-datatransport:18.1.5] /Users/laptopwala/.gradle/caches/transforms-3/fb1990b5771d0897d4f98a6b88bf5691/transformed/jetified-firebase-datatransport-18.1.5/AndroidManifest.xml:30:17-82
+136            <meta-data
+136-->[com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
+137                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+137-->[com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.firebase:firebase-installations:17.0.1] /Users/laptopwala/.gradle/caches/transforms-3/77bf1475b5a0fc68bf4cb8b562793c9e/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
+139        </service>
+140
+141        <provider
+141-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:41:9-45:38
+142            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+142-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-102
+143            android:authorities="estibafy.com.estibafy_user.flutterfirebasemessaginginitprovider"
+143-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:43:13-88
+144            android:exported="false"
+144-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-37
+145            android:initOrder="99" />
+145-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-35
+146
+147        <service
+147-->[:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:9-16:56
+148            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+148-->[:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-77
+149            android:enabled="true"
+149-->[:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-35
+150            android:exported="false"
+150-->[:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-37
+151            android:foregroundServiceType="location" />
+151-->[:geolocator_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-53
+152
+153        <provider
+153-->[:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+154            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+154-->[:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+155            android:authorities="estibafy.com.estibafy_user.flutter.image_provider"
+155-->[:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+156            android:exported="false"
+156-->[:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+157            android:grantUriPermissions="true" >
+157-->[:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+158            <meta-data
+158-->[:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+159                android:name="android.support.FILE_PROVIDER_PATHS"
+159-->[:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+160                android:resource="@xml/flutter_image_picker_file_paths" />
+160-->[:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+161        </provider>
+162
+163        <receiver
+163-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:40
+164            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+164-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-97
+165            android:exported="false" />
+165-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+166        <receiver
+166-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-28:20
+167            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+167-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-101
+168            android:exported="false" >
+168-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+169            <intent-filter>
+169-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-27:29
+170                <action android:name="android.intent.action.BOOT_COMPLETED" />
+170-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-79
+170-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:25-76
+171                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+171-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:17-84
+171-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:25-81
+172                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+172-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:17-82
+172-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:25-79
+173                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+173-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-82
+173-->[:flutter_local_notifications] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-79
+174            </intent-filter>
+175        </receiver>
+176
+177        <activity
+177-->[:url_launcher_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
+178            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+178-->[:url_launcher_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+179            android:exported="false"
+179-->[:url_launcher_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+180            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+180-->[:url_launcher_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+181
+182        <provider
+182-->[:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-23:20
+183            android:name="com.crazecoder.openfile.FileProvider"
+183-->[:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-64
+184            android:authorities="estibafy.com.estibafy_user.fileProvider.com.crazecoder.openfile"
+184-->[:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-88
+185            android:exported="false"
+185-->[:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-37
+186            android:grantUriPermissions="true" >
+186-->[:open_file] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/open_file/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-47
+187            <meta-data
+187-->[:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:75
+188                android:name="android.support.FILE_PROVIDER_PATHS"
+188-->[:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+189                android:resource="@xml/filepaths" />
+189-->[:image_picker_android] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-72
+190        </provider>
+191
+192        <service
+192-->[:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-17:56
+193            android:name="com.lyokone.location.FlutterLocationService"
+193-->[:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-71
+194            android:enabled="true"
+194-->[:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-35
+195            android:exported="false"
+195-->[:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
+196            android:foregroundServiceType="location" />
+196-->[:location] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-53
+197
+198        <uses-library
+198-->[androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+199            android:name="androidx.window.extensions"
+199-->[androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+200            android:required="false" />
+200-->[androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+201        <uses-library
+201-->[androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+202            android:name="androidx.window.sidecar"
+202-->[androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+203            android:required="false" />
+203-->[androidx.window:window:1.0.0-beta04] /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+204
+205        <receiver
+205-->[com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:32:9-39:20
+206            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+206-->[com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:33:13-78
+207            android:exported="true"
+207-->[com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:34:13-36
+208            android:permission="com.google.android.c2dm.permission.SEND" >
+208-->[com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:35:13-73
+209            <intent-filter>
+209-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-32:29
+210                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+210-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-81
+210-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-78
+211            </intent-filter>
+212        </receiver>
+213        <!--
+214             FirebaseMessagingService performs security checks at runtime,
+215             but set to not exported to explicitly avoid allowing another app to call it.
+216        -->
+217        <service
+217-->[com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:45:9-52:19
+218            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+218-->[com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:46:13-82
+219            android:directBootAware="true"
+219-->[com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:47:13-43
+220            android:exported="false" >
+220-->[com.google.firebase:firebase-messaging:23.0.7] /Users/laptopwala/.gradle/caches/transforms-3/68420593a51420fc14ef12d126172289/transformed/jetified-firebase-messaging-23.0.7/AndroidManifest.xml:48:13-37
+221            <intent-filter android:priority="-500" >
+221-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:29
+222                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+222-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-78
+222-->[:firebase_messaging] /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:22:25-75
+223            </intent-filter>
+224        </service>
+225
+226        <provider
+226-->[com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:26:9-31:39
+227            android:name="com.google.firebase.provider.FirebaseInitProvider"
+227-->[com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:27:13-77
+228            android:authorities="estibafy.com.estibafy_user.firebaseinitprovider"
+228-->[com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:28:13-72
+229            android:directBootAware="true"
+229-->[com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:29:13-43
+230            android:exported="false"
+230-->[com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:30:13-37
+231            android:initOrder="100" /> <!-- Needs to be explicitly declared on P+ -->
+231-->[com.google.firebase:firebase-common:20.1.1] /Users/laptopwala/.gradle/caches/transforms-3/b2f7296ae7eba2ecd15b7597f6fef0df/transformed/jetified-firebase-common-20.1.1/AndroidManifest.xml:31:13-36
+232        <uses-library
+232-->[com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:39:9-41:40
+233            android:name="org.apache.http.legacy"
+233-->[com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:40:13-50
+234            android:required="false" />
+234-->[com.google.android.gms:play-services-maps:18.0.2] /Users/laptopwala/.gradle/caches/transforms-3/05f1f2834f8c0f0c1344dfc07aa8a837/transformed/jetified-play-services-maps-18.0.2/AndroidManifest.xml:41:13-37
+235
+236        <activity
+236-->[com.google.android.gms:play-services-base:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/90ef692600ffd86d39c9c8c20f1c1b6f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+237            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+237-->[com.google.android.gms:play-services-base:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/90ef692600ffd86d39c9c8c20f1c1b6f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+238            android:exported="false"
+238-->[com.google.android.gms:play-services-base:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/90ef692600ffd86d39c9c8c20f1c1b6f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+239            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+239-->[com.google.android.gms:play-services-base:18.0.1] /Users/laptopwala/.gradle/caches/transforms-3/90ef692600ffd86d39c9c8c20f1c1b6f/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+240
+241        <meta-data
+241-->[com.google.android.gms:play-services-basement:18.0.0] /Users/laptopwala/.gradle/caches/transforms-3/af433a4c1a795369a73a262ab2bd7347/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+242            android:name="com.google.android.gms.version"
+242-->[com.google.android.gms:play-services-basement:18.0.0] /Users/laptopwala/.gradle/caches/transforms-3/af433a4c1a795369a73a262ab2bd7347/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+243            android:value="@integer/google_play_services_version" />
+243-->[com.google.android.gms:play-services-basement:18.0.0] /Users/laptopwala/.gradle/caches/transforms-3/af433a4c1a795369a73a262ab2bd7347/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+244
+245        <service
+245-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:29:9-35:19
+246            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+246-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:30:13-103
+247            android:exported="false" >
+247-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:31:13-37
+248            <meta-data
+248-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:32:13-34:39
+249                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+249-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:33:17-94
+250                android:value="cct" />
+250-->[com.google.android.datatransport:transport-backend-cct:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/e943950344ab668385fce32671306f91/transformed/jetified-transport-backend-cct-3.1.6/AndroidManifest.xml:34:17-36
+251        </service>
+252        <service
+252-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:26:9-30:19
+253            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+253-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:27:13-117
+254            android:exported="false"
+254-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:28:13-37
+255            android:permission="android.permission.BIND_JOB_SERVICE" >
+255-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:29:13-69
+256        </service>
+257
+258        <receiver
+258-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:32:9-34:40
+259            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+259-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:33:13-132
+260            android:exported="false" />
+260-->[com.google.android.datatransport:transport-runtime:3.1.6] /Users/laptopwala/.gradle/caches/transforms-3/1a71d6c0824aba238067cfe6913769c8/transformed/jetified-transport-runtime-3.1.6/AndroidManifest.xml:34:13-37
+261    </application>
+262
+263</manifest>

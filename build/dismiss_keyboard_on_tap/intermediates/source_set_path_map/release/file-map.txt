@@ -1,0 +1,12 @@
+com.awaisamjed.dismiss_keyboard_on_tap-jetified-annotation-experimental-1.1.0-0 /Users/laptopwala/.gradle/caches/transforms-3/21d2a332cac1b039cfd7337048ae1658/transformed/jetified-annotation-experimental-1.1.0/res
+com.awaisamjed.dismiss_keyboard_on_tap-core-1.6.0-1 /Users/laptopwala/.gradle/caches/transforms-3/57bdd321bdde57ce1fdcf07bdba1de89/transformed/core-1.6.0/res
+com.awaisamjed.dismiss_keyboard_on_tap-jetified-window-1.0.0-beta04-2 /Users/laptopwala/.gradle/caches/transforms-3/60ce2f2ffb62c69d0c673ac38088dfd6/transformed/jetified-window-1.0.0-beta04/res
+com.awaisamjed.dismiss_keyboard_on_tap-jetified-window-java-1.0.0-beta04-3 /Users/laptopwala/.gradle/caches/transforms-3/8ed68306783030c7ca2d79ae532f6c50/transformed/jetified-window-java-1.0.0-beta04/res
+com.awaisamjed.dismiss_keyboard_on_tap-main-4 /Users/laptopwala/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/dismiss_keyboard_on_tap-1.0.1/android/src/main/res
+com.awaisamjed.dismiss_keyboard_on_tap-release-5 /Users/laptopwala/Developer/flutter/.pub-cache/hosted/pub.dartlang.org/dismiss_keyboard_on_tap-1.0.1/android/src/release/res
+com.awaisamjed.dismiss_keyboard_on_tap-pngs-6 /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/dismiss_keyboard_on_tap/generated/res/pngs/release
+com.awaisamjed.dismiss_keyboard_on_tap-resValues-7 /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/dismiss_keyboard_on_tap/generated/res/resValues/release
+com.awaisamjed.dismiss_keyboard_on_tap-rs-8 /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/dismiss_keyboard_on_tap/generated/res/rs/release
+com.awaisamjed.dismiss_keyboard_on_tap-mergeReleaseResources-9 /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/dismiss_keyboard_on_tap/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.awaisamjed.dismiss_keyboard_on_tap-mergeReleaseResources-10 /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/dismiss_keyboard_on_tap/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.awaisamjed.dismiss_keyboard_on_tap-merged_res-11 /Users/laptopwala/Documents/Fiverr Projects/Estibafyuser/EstibafyUserApp/build/dismiss_keyboard_on_tap/intermediates/merged_res/release
