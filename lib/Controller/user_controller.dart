@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:io';
 
 import 'package:device_info_plus/device_info_plus.dart';
@@ -53,6 +54,7 @@ class UserController extends GetxController {
       user.value = User(
         name: name,
         email: email,
+        userId: int.parse(id),
         phoneNumber: phone,
         password: password,
       );
@@ -93,6 +95,7 @@ class UserController extends GetxController {
 
     if (deviceID != null) {
       print("im going to call apis");
+      log(deviceID);
       final Map<String, dynamic>? result = await WebAPIs.signIn(
         email: email,
         password: password,
@@ -103,6 +106,7 @@ class UserController extends GetxController {
         user.value = User(
           name: result['data']['user']['name'],
           email: email,
+          userId: result['data']['user']['id'],
           phoneNumber: result['data']['user']['mobile'],
           password: password,
         );
@@ -197,6 +201,14 @@ class UserController extends GetxController {
     }
 
     EasyLoading.dismiss();
+  }
+
+  void deleteAccount() {
+    WebAPIs.deleteAccount().whenComplete(() {
+      K.localStorage.remove(K.loggedInUser);
+      K.localStorage.remove(userToken);
+      Get.offAll(() => const LoginOrCreateAccount());
+    });
   }
 
   void signOut() async {

@@ -8,7 +8,6 @@ import 'package:estibafy_user/models/widgets/appbar.dart';
 import 'package:estibafy_user/models/widgets/invoices_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
 import '../drawer.dart';
@@ -16,7 +15,7 @@ import '../drawer.dart';
 class Invoices extends StatelessWidget {
   final bool isBackButton;
   InvoiceController invoiceController = Get.put(InvoiceController());
-  UserController user = Get.put(UserController());
+
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   final TextEditingController searchController = TextEditingController();
 
@@ -24,6 +23,7 @@ class Invoices extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final UserController _userController = Get.find(tag: K.userControllerTag);
     return Scaffold(
       appBar: isBackButton == false
           ? getAppBar('Invoices', _scaffoldKey)
@@ -41,57 +41,57 @@ class Invoices extends StatelessWidget {
               const SizedBox(
                 height: 15,
               ),
-              Material(
-                borderRadius: BorderRadius.circular(25.0),
-                elevation: 10.0,
-                child: Container(
-                  height: 50.0,
-                  child: TextFormField(
-                    controller: searchController,
-                    style: const TextStyle(fontSize: 18.0),
-                    decoration: InputDecoration(
-                        contentPadding: const EdgeInsets.only(
-                            left: 20.0, right: 10.0, bottom: 20.0),
-                        filled: true,
-                        suffixIcon: Row(
-                          mainAxisAlignment:
-                              MainAxisAlignment.spaceBetween, // added line
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            IconButton(
-                                onPressed: () {},
-                                icon: Icon(
-                                  FontAwesomeIcons.solidCalendarCheck,
-                                  color: K.fourthColor,
-                                )),
-                            SizedBox(
-                              height: 30,
-                              child: VerticalDivider(
-                                color: K.sixthColor,
-                              ),
-                            ),
-                            IconButton(
-                                onPressed: () {},
-                                icon: Icon(
-                                  FontAwesomeIcons.filter,
-                                  color: K.fourthColor,
-                                )),
-                          ],
-                        ),
-                        prefixIcon: Icon(
-                          FontAwesomeIcons.search,
-                          color: K.primaryColor,
-                        ),
-                        fillColor: Colors.grey[100],
-                        focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(25.0),
-                            borderSide: BorderSide.none),
-                        enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(25.0),
-                            borderSide: BorderSide.none)),
-                  ),
-                ),
-              ),
+              // Material(
+              //   borderRadius: BorderRadius.circular(25.0),
+              //   elevation: 10.0,
+              //   child: Container(
+              //     height: 50.0,
+              //     child: TextFormField(
+              //       controller: searchController,
+              //       style: const TextStyle(fontSize: 18.0),
+              //       decoration: InputDecoration(
+              //           contentPadding: const EdgeInsets.only(
+              //               left: 20.0, right: 10.0, bottom: 20.0),
+              //           filled: true,
+              //           suffixIcon: Row(
+              //             mainAxisAlignment:
+              //                 MainAxisAlignment.spaceBetween, // added line
+              //             mainAxisSize: MainAxisSize.min,
+              //             children: [
+              //               IconButton(
+              //                   onPressed: () {},
+              //                   icon: Icon(
+              //                     FontAwesomeIcons.solidCalendarCheck,
+              //                     color: K.fourthColor,
+              //                   )),
+              //               SizedBox(
+              //                 height: 30,
+              //                 child: VerticalDivider(
+              //                   color: K.sixthColor,
+              //                 ),
+              //               ),
+              //               IconButton(
+              //                   onPressed: () {},
+              //                   icon: Icon(
+              //                     FontAwesomeIcons.filter,
+              //                     color: K.fourthColor,
+              //                   )),
+              //             ],
+              //           ),
+              //           prefixIcon: Icon(
+              //             FontAwesomeIcons.search,
+              //             color: K.primaryColor,
+              //           ),
+              //           fillColor: Colors.grey[100],
+              //           focusedBorder: OutlineInputBorder(
+              //               borderRadius: BorderRadius.circular(25.0),
+              //               borderSide: BorderSide.none),
+              //           enabledBorder: OutlineInputBorder(
+              //               borderRadius: BorderRadius.circular(25.0),
+              //               borderSide: BorderSide.none)),
+              //     ),
+              //   ),
+              // ),
               // Container(
               //   decoration: BoxDecoration(
               //     borderRadius: BorderRadius.circular(30),
@@ -155,7 +155,8 @@ class Invoices extends StatelessWidget {
               //   ),
               // ),
               FutureBuilder<InvoiceModel>(
-                  future: WebAPIs.getInvoice('1'),
+                  future: WebAPIs.getInvoice(
+                      _userController.user.value.userId ?? 0),
                   builder: (context, invoices) {
                     if (invoices.hasData) {
                       return ListView.builder(

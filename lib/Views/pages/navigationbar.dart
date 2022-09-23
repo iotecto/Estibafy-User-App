@@ -20,7 +20,9 @@ class NavBar extends StatefulWidget {
 class _NavBarState extends State<NavBar> {
   final tabs = [
     const Home(),
-    Invoices(isBackButton: true),
+    Invoices(
+      isBackButton: false,
+    ),
     const Booking(isBackButton: false),
     // Invoices(isBackButton: false),
     const Profile(isBackButton: false),

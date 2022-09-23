@@ -2,6 +2,7 @@ class User {
   String? imagePath;
   String name;
   String email;
+  int? userId;
   String phoneNumber;
   String? address;
   String? city;
@@ -9,18 +10,19 @@ class User {
   String? country;
   String password;
 
-  User({
-    required this.name,
-    required this.email,
-    required this.phoneNumber,
-    required this.password,
-    this.imagePath,
-  });
+  User(
+      {required this.name,
+      required this.email,
+      required this.phoneNumber,
+      required this.password,
+      this.imagePath,
+      this.userId});
 
   Map<String, dynamic> toJson() => {
         'name': name,
         'address': address,
         'city': city,
+        'id': userId,
         'state': state,
         'country': country,
         'phoneNumber': phoneNumber,
@@ -33,6 +35,7 @@ class User {
         address = json['address'],
         city = json['city'],
         state = json['state'],
+        userId = json['id'],
         country = json['country'],
         phoneNumber = json['phoneNumber'],
         email = json['email'],

@@ -95,6 +95,9 @@ Widget buildInvoicesCard(BuildContext context, Datum data, Function() onTap) {
                           const SizedBox(
                             width: 5,
                           ),
+                          Text(
+                              "${data.job!.jobHelpers![0].helperProfile!.email}",
+                              style: K.textStyle2),
                         ],
                       ),
                       const SizedBox(
@@ -119,15 +122,15 @@ Widget buildInvoicesCard(BuildContext context, Datum data, Function() onTap) {
                       ),
                       Row(
                         children: [
-                          Icon(
-                            Icons.person_pin_rounded,
-                            color: K.primaryColor,
-                            size: 20,
-                          ),
+                          // Icon(
+                          //   Icons.person_pin_rounded,
+                          //   color: K.primaryColor,
+                          //   size: 20,
+                          // ),
                           const SizedBox(
                             width: 5,
                           ),
-                          Text("${data.jobId}", style: K.textStyle2),
+                          // Text("${data.}", style: K.textStyle2),
                         ],
                       ),
                     ],

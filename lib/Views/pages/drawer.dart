@@ -1,6 +1,7 @@
 import 'package:estibafy_user/Controller/user_controller.dart';
 import 'package:estibafy_user/Views/pages/bookings/booking.dart';
 import 'package:estibafy_user/Views/pages/profile/profile.dart';
+import 'package:estibafy_user/Views/pages/settings/settings_screen.dart';
 import 'package:estibafy_user/Views/pages/tracking.dart';
 import 'package:estibafy_user/models/utils/constants.dart';
 import 'package:estibafy_user/models/widgets/drawer_tile.dart';
@@ -9,9 +10,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
 import 'helpers/helpers.dart';
-import 'history/history.dart';
 import 'invoices/invoices.dart';
-import 'paymentmethod/paymentmethods.dart';
 
 class SideDrawer extends StatelessWidget {
   const SideDrawer({Key? key}) : super(key: key);
@@ -59,9 +58,8 @@ class SideDrawer extends StatelessWidget {
                                         ));
                                       },
                                       child: CircleAvatar(
-                                        backgroundColor: K.fourthColor,
-                                        backgroundImage: const NetworkImage(
-                                            'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60'),
+                                        backgroundColor: K.primaryColor,
+                                        child: Icon(Icons.person_outline),
                                         radius: 32,
                                       ),
                                     ),
@@ -127,23 +125,23 @@ class SideDrawer extends StatelessWidget {
                                 //   style: K.textStyle2
                                 //       .copyWith(color: K.primaryColor),
                                 // ),
-                                Row(
-                                  children: [
-                                    SizedBox(
-                                        width: 35,
-                                        child: IconButton(
-                                            onPressed: () {},
-                                            icon: Icon(
-                                              Icons.add,
-                                              color: K.primaryColor,
-                                            ))),
-                                    Text(
-                                      'Add Balance',
-                                      style: K.textStyle2
-                                          .copyWith(color: K.primaryColor),
-                                    ),
-                                  ],
-                                ),
+                                // Row(
+                                //   children: [
+                                //     SizedBox(
+                                //         width: 35,
+                                //         child: IconButton(
+                                //             onPressed: () {},
+                                //             icon: Icon(
+                                //               Icons.add,
+                                //               color: K.primaryColor,
+                                //             ))),
+                                //     Text(
+                                //       'Add Balance',
+                                //       style: K.textStyle2
+                                //           .copyWith(color: K.primaryColor),
+                                //     ),
+                                //   ],
+                                // ),
                               ],
                             ),
                           ),
@@ -152,26 +150,28 @@ class SideDrawer extends StatelessWidget {
                           ),
                           Tile(
                               text: 'Settings',
-                              function: () {},
-                              icon: Icons.settings),
-                          Tile(
-                              text: 'Payment Method',
                               function: () {
-                                Get.to(PaymentMethods());
+                                Get.to(const SettingsScreen());
                               },
-                              icon: Icons.credit_card),
+                              icon: Icons.settings),
+                          // Tile(
+                          //     text: 'Payment Method',
+                          //     function: () {
+                          //       Get.to(PaymentMethods());
+                          //     },
+                          //     icon: Icons.credit_card),
                           Tile(
                               text: 'Booking',
                               function: () {
                                 Get.to(const Booking(isBackButton: true));
                               },
                               icon: FontAwesomeIcons.bookOpen),
-                          Tile(
-                              text: 'History',
-                              function: () {
-                                Get.to(History());
-                              },
-                              icon: Icons.history),
+                          // Tile(
+                          //     text: 'History',
+                          //     function: () {
+                          //       Get.to(History());
+                          //     },
+                          //     icon: Icons.history),
                           Tile(
                               text: 'Invoices',
                               function: () {
@@ -186,10 +186,10 @@ class SideDrawer extends StatelessWidget {
                                 Get.to(const HelpersTabBar());
                               },
                               icon: FontAwesomeIcons.solidHandshake),
-                          Tile(
-                              text: 'Payments',
-                              function: () {},
-                              icon: Icons.list_alt_outlined),
+                          // Tile(
+                          //     text: 'Payments',
+                          //     function: () {},
+                          //     icon: Icons.list_alt_outlined),
                           Tile(
                               text: 'Favorites',
                               function: () {
@@ -202,10 +202,10 @@ class SideDrawer extends StatelessWidget {
                                 Get.to(Tracking());
                               },
                               icon: Icons.map),
-                          Tile(
-                              text: 'Address',
-                              function: () {},
-                              icon: Icons.location_on),
+                          // Tile(
+                          //     text: 'Address',
+                          //     function: () {},
+                          //     icon: Icons.location_on),
                         ],
                       ),
                     ),

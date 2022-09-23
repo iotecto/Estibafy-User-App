@@ -84,9 +84,9 @@ class WebAPIs {
     return null;
   }
 
-  static Future<InvoiceModel> getInvoice(String? id) async {
+  static Future<InvoiceModel> getInvoice(int id) async {
     final queryParameters = {
-      "user_id": id,
+      "user_id": "$id",
     };
 
     final uri = Uri.http('149.102.158.40',
@@ -269,6 +269,17 @@ class WebAPIs {
       return json.decode(r.body);
     }
     return null;
+  }
+
+  static Future deleteAccount() async {
+    Response r = await post(Uri.parse(baseURL + "account/delation"),
+        headers: getAuthHeader());
+
+    if (validateResponse(r)) {
+      return;
+    } else {
+      return null;
+    }
   }
 
   static Future<Map<String, dynamic>?> resendOtp({
