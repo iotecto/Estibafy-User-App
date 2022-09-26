@@ -204,11 +204,10 @@ class UserController extends GetxController {
   }
 
   void deleteAccount() {
-    WebAPIs.deleteAccount().whenComplete(() {
-      K.localStorage.remove(K.loggedInUser);
-      K.localStorage.remove(userToken);
-      Get.offAll(() => const LoginOrCreateAccount());
-    });
+    WebAPIs.deleteAccount();
+    K.localStorage.remove(K.loggedInUser);
+    K.localStorage.remove(userToken);
+    Get.offAll(() => const LoginOrCreateAccount());
   }
 
   void signOut() async {

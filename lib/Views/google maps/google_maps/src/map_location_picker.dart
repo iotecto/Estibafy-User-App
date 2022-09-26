@@ -9,11 +9,9 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import "package:google_maps_webservice/geocoding.dart";
 import 'package:google_maps_webservice/places.dart';
 import 'package:http/http.dart';
-import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../models/utils/constants.dart';
-import '../../../pages/book_helpers/book_helpers_data_collection.dart';
 import 'logger.dart';
 import 'provider.dart';
 
@@ -660,15 +658,6 @@ class _MapLocationPickerState extends State<MapLocationPicker> {
                           onPressed: () async {
                             widget.onNext
                                 .call(_lastMapPosition, _geocodingResult);
-                            if (widget.canPopOnNextButtonTaped) {
-                              pushNewScreenWithRouteSettings(
-                                context,
-                                settings: const RouteSettings(
-                                    name: '/bookHelpersDataCollection'),
-                                screen: const BookHelpersDataCollection(),
-                                withNavBar: true,
-                              );
-                            }
                           },
                         ),
                       ),
