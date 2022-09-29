@@ -9,7 +9,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
-import 'helpers/helpers.dart';
 import 'invoices/invoices.dart';
 
 class SideDrawer extends StatelessWidget {
@@ -180,22 +179,22 @@ class SideDrawer extends StatelessWidget {
                                 ));
                               },
                               icon: FontAwesomeIcons.fileInvoice),
-                          Tile(
-                              text: 'Helpers',
-                              function: () {
-                                Get.to(const HelpersTabBar());
-                              },
-                              icon: FontAwesomeIcons.solidHandshake),
                           // Tile(
-                          //     text: 'Payments',
-                          //     function: () {},
-                          //     icon: Icons.list_alt_outlined),
-                          Tile(
-                              text: 'Favorites',
-                              function: () {
-                                Get.to(const HelpersTabBar());
-                              },
-                              icon: Icons.favorite),
+                          //     text: 'Helpers',
+                          //     function: () {
+                          //       Get.to(const HelpersTabBar());
+                          //     },
+                          //     icon: FontAwesomeIcons.solidHandshake),
+                          // // Tile(
+                          // //     text: 'Payments',
+                          // //     function: () {},
+                          // //     icon: Icons.list_alt_outlined),
+                          // Tile(
+                          //     text: 'Favorites',
+                          //     function: () {
+                          //       Get.to(const HelpersTabBar());
+                          //     },
+                          //     icon: Icons.favorite),
                           Tile(
                               text: 'Map',
                               function: () {

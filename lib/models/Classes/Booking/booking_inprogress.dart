@@ -18,10 +18,10 @@ class BookingInProgress extends StatelessWidget {
   Widget build(BuildContext context) {
     var listData;
     if (inProgress == 'in-progress') {
-      listData =
-          List<dynamic>.from(data.map((x) => Pending.fromMap(x)).toList());
+      listData = List<dynamic>.from(
+          data.reversed.map((x) => Pending.fromMap(x)).toList());
     } else {
-      listData = data.map((x) => Pending.fromMap(x)).toList();
+      listData = data.reversed.map((x) => Pending.fromMap(x)).toList();
     }
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,

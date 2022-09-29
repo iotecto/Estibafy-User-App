@@ -249,16 +249,33 @@ class _MapLocationPickerState extends State<MapLocationPicker> {
   }
 
   getMyCurrentLocation() async {
-    await Geolocator.requestPermission();
-    Position position = await Geolocator.getCurrentPosition(
-      desiredAccuracy: widget.desiredAccuracy,
-    );
-    LatLng latLng = LatLng(position.latitude, position.longitude);
-    _initialPosition = latLng;
-    final controller = await _controller.future;
-    controller.animateCamera(CameraUpdate.newCameraPosition(cameraPosition()));
-    _decodeAddress(Location(lat: position.latitude, lng: position.longitude));
-    setState(() {});
+    LocationPermission permission;
+    permission = await Geolocator.requestPermission();
+
+    if (permission != LocationPermission.deniedForever ||
+        permission != LocationPermission.denied) {
+      Position position = await Geolocator.getCurrentPosition(
+        desiredAccuracy: widget.desiredAccuracy,
+      );
+      LatLng latLng = LatLng(position.latitude, position.longitude);
+      setState(() {
+        _initialPosition = latLng;
+      });
+      final controller = await _controller.future;
+      controller
+          .animateCamera(CameraUpdate.newCameraPosition(cameraPosition()));
+      _decodeAddress(Location(lat: position.latitude, lng: position.longitude));
+    } else {
+      LatLng latLng = const LatLng(37.42188076399406, -122.08408266305923);
+      setState(() {
+        _initialPosition = latLng;
+      });
+      final controller = await _controller.future;
+      controller
+          .animateCamera(CameraUpdate.newCameraPosition(cameraPosition()));
+      _decodeAddress(Location(
+          lat: _initialPosition.latitude, lng: _initialPosition.longitude));
+    }
   }
 
   @override

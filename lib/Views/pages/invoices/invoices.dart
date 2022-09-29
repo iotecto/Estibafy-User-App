@@ -159,20 +159,26 @@ class Invoices extends StatelessWidget {
                       _userController.user.value.userId ?? 0),
                   builder: (context, invoices) {
                     if (invoices.hasData) {
-                      return ListView.builder(
-                        physics: const BouncingScrollPhysics(),
-                        shrinkWrap: true,
-                        itemCount: invoices.data!.data!.length,
-                        itemBuilder: (BuildContext context, int index) =>
-                            buildInvoicesCard(
-                                context, invoices.data!.data![index], () {
-                          Navigator.push(
-                              context,
-                              CupertinoPageRoute(
-                                  builder: (context) => InvoicesDetail(
-                                      job: invoices.data!.data![index])));
-                        }),
-                      );
+                      if (invoices.data!.data!.isNotEmpty) {
+                        return ListView.builder(
+                            physics: const BouncingScrollPhysics(),
+                            shrinkWrap: true,
+                            itemCount: invoices.data!.data!.length,
+                            itemBuilder: (BuildContext context, int index) {
+                              return buildInvoicesCard(
+                                  context, invoices.data!.data![index], () {
+                                Navigator.push(
+                                    context,
+                                    CupertinoPageRoute(
+                                        builder: (context) => InvoicesDetail(
+                                            job: invoices.data!.data![index])));
+                              });
+                            });
+                      } else {
+                        return const Center(
+                          child: Text('Empty list'),
+                        );
+                      }
                     } else {
                       return const Center(
                         child: CircularProgressIndicator(),

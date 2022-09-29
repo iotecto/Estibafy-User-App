@@ -9,7 +9,6 @@ import 'package:estibafy_user/models/widgets/pressedwidget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:location/location.dart';
 
 class PersonSignUp extends StatefulWidget {
   const PersonSignUp({Key? key}) : super(key: key);
@@ -21,7 +20,7 @@ class PersonSignUp extends StatefulWidget {
 class _PersonSignUpState extends State<PersonSignUp> {
   SignUpController signUpController = Get.put(SignUpController());
   //initial country code
- String countryCode="+593 ";
+  String countryCode = "+593 ";
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -66,10 +65,10 @@ class _PersonSignUpState extends State<PersonSignUp> {
                     ),
                     textAlign: TextAlign.center,
                     style: K.textStyle3,
-                      onChanged: (value) {
-                        signUpController.phone = '${countryCode +  signUpController.personMobileController.text}';
-                      },
-
+                    onChanged: (value) {
+                      signUpController.phone =
+                          '${countryCode + signUpController.personMobileController.text}';
+                    },
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 17),
@@ -103,13 +102,13 @@ class _PersonSignUpState extends State<PersonSignUp> {
         //     text: 'Mobile Number',
         //     prefix: Icons.phone_android_outlined,
         //     controller: signUpController.personMobileController),
-        input(
-            onChanged: (value) {
-              signUpController.id = value;
-            },
-            text: 'Government I.D',
-            prefix: Icons.person_pin_rounded,
-            controller: signUpController.personIDController),
+        // input(
+        //     onChanged: (value) {
+        //       signUpController.id = value;
+        //     },
+        //     text: 'Government I.D',
+        //     prefix: Icons.person_pin_rounded,
+        //     controller: signUpController.personIDController),
         input(
           onChanged: (value) {
             signUpController.password = value;
@@ -171,7 +170,7 @@ class _PersonSignUpState extends State<PersonSignUp> {
                 child: Theme(
                   data: ThemeData(unselectedWidgetColor: K.fourthColor),
                   child: Obx(
-                        ()=> Checkbox(
+                    () => Checkbox(
                       checkColor: K.secondaryColor,
                       focusColor: K.primaryColor,
                       hoverColor: K.secondaryColor,
@@ -186,8 +185,8 @@ class _PersonSignUpState extends State<PersonSignUp> {
               ),
             ),
             GestureDetector(
-              onTap: (){
-                Get.to(()=> TermsAndConditions());
+              onTap: () {
+                Get.to(() => TermsAndConditions());
               },
               child: Text(
                 "I Agree to Terms & Conditions and Privacy Policy",
@@ -200,54 +199,64 @@ class _PersonSignUpState extends State<PersonSignUp> {
           height: 15,
         ),
         Obx(
-          ()=> customButton(
-              function:signUpController.isChecked.value? () async {
-                if (signUpController.name == '' ||
-                    signUpController.email == '' ||
-                    signUpController.phone == '' ||
-                    signUpController.id == '' ||
-                    signUpController.password == '') {
-                  K.showToast(message: 'Enter all details first');
-                } else if (EmailValidator.validate(signUpController.email) == false) {
-                  K.showToast(message: 'Invalid Email');
-                } else if (signUpController.password.length < 8) {
-                  K.showToast(
-                      message: 'Password must be at least 8 characters long');
-                } else if (signUpController.password !=
-                    signUpController.confirmPassword) {
-                  K.showToast(message: "Passwords don't match");
-                } else {
-                  var location = await UserController.getUserLocation();
+          () => customButton(
+              function: signUpController.isChecked.value
+                  ? () async {
+                      if (signUpController.name == '' ||
+                          signUpController.email == '' ||
+                          signUpController.phone == '' ||
+                          signUpController.password == '') {
+                        K.showToast(message: 'Enter all details first');
+                      } else if (EmailValidator.validate(
+                              signUpController.email) ==
+                          false) {
+                        K.showToast(message: 'Invalid Email');
+                      } else if (signUpController.password.length < 8) {
+                        K.showToast(
+                            message:
+                                'Password must be at least 8 characters long');
+                      } else if (signUpController.password !=
+                          signUpController.confirmPassword) {
+                        K.showToast(message: "Passwords don't match");
+                      } else {
+                        var location = await UserController.getUserLocation();
 
-                  if (location == null) {
-                    K.showToast(
-                        message:
-                            "Unable to get permission please allow location permission in the device settings");
-                  } else if(!signUpController.isChecked.value){
-                    K.showToast(message: "Accept Terms and conditions please");
-                  }else {
-                    print(
-                        '---------userType------------${signUpController.userType}');
-                    UserController _controller =
-                        Get.find(tag: K.userControllerTag);
-                    _controller.signUp(
-                        userType: signUpController.userType,
-                        id: signUpController.id,
-                        name: signUpController.name,
-                        email: signUpController.email,
-                        phone: signUpController.phone,
-                        password: signUpController.password,
-                        confirmPassword: signUpController.confirmPassword,
-                        govtId: signUpController.id,
-                        lat: location.latitude ?? 0.60000,
-                        lng: location.longitude ?? 0.50000);
-                  }
-                }
-              }:(){},
+                        if (location == null) {
+                          K.showToast(
+                              message:
+                                  "Unable to get permission please allow location permission in the device settings");
+                        } else if (!signUpController.isChecked.value) {
+                          K.showToast(
+                              message: "Accept Terms and conditions please");
+                        } else {
+                          print(
+                              '---------userType------------${signUpController.userType}');
+                          UserController _controller =
+                              Get.find(tag: K.userControllerTag);
+                          _controller.signUp(
+                              userType: signUpController.userType,
+                              id: signUpController.id,
+                              name: signUpController.name,
+                              email: signUpController.email,
+                              phone: signUpController.phone,
+                              password: signUpController.password,
+                              confirmPassword: signUpController.confirmPassword,
+                              lat: location.latitude ?? 0.60000,
+                              lng: location.longitude ?? 0.50000);
+                        }
+                      }
+                    }
+                  : () {},
               text: 'Sign Up',
-              textColor:signUpController.isChecked.value ? K.secondaryColor : Colors.grey,
-              arrowColor:signUpController.isChecked.value? K.secondaryColor : Colors.grey,
-              fillColor: signUpController.isChecked.value ? K.primaryColor : Colors.white,
+              textColor: signUpController.isChecked.value
+                  ? K.secondaryColor
+                  : Colors.grey,
+              arrowColor: signUpController.isChecked.value
+                  ? K.secondaryColor
+                  : Colors.grey,
+              fillColor: signUpController.isChecked.value
+                  ? K.primaryColor
+                  : Colors.white,
               borderColor: K.primaryColor,
               height: 55.0,
               margin: 10.0),
