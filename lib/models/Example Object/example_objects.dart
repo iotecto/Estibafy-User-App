@@ -1,11 +1,9 @@
-import 'package:estibafy_user/models/Classes/Payment%20Method%20Widgets/price_choose_list.dart';
-import 'package:estibafy_user/models/Classes/Profile%20Class/country_choose.dart';
-import 'package:estibafy_user/models/Classes/Profile%20Class/province_choose.dart';
 import 'package:estibafy_user/models/Classes/user.dart';
 
 class ExampleObjects {
   static User user = User(
     name: 'Emilia Clarke',
+    userId:123213,
     email: 'emiliaclarke@gmail.com',
     phoneNumber: '305-667-5677',
     password: 'meowmeow',

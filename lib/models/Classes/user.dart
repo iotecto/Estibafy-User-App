@@ -15,6 +15,7 @@ class User {
       required this.email,
       required this.phoneNumber,
       required this.password,
+       
       this.imagePath,
       this.userId});
 

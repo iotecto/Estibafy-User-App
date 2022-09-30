@@ -32,6 +32,7 @@ class UserController extends GetxController {
     required double lat,
     required double lng,
   }) async {
+    print("IDDD==============$id");
     EasyLoading.show();
 
     String? deviceTypes;
@@ -50,13 +51,16 @@ class UserController extends GetxController {
         lat: lat,
         lng: lng);
 
-    if (result != null) {
+    if (result != null ) {
+      print("21313");
+      print(result);
       user.value = User(
         name: name,
         email: email,
-        userId: int.parse(id),
         phoneNumber: phone,
         password: password,
+      
+      
       );
 
       // K.localStorage.write(
@@ -103,7 +107,9 @@ class UserController extends GetxController {
       );
 
       if (result != null) {
+        print("asddddddddddddddddddddddddddddddddddddddd ${result['data']['user']}");
         user.value = User(
+
           name: result['data']['user']['name'],
           email: email,
           userId: result['data']['user']['id'],
@@ -121,9 +127,7 @@ class UserController extends GetxController {
         Get.offAll(() => const NavBar());
         String? token = await FCMNotifications.messaging.getToken();
         print("fcm token is " + token!);
-        if (token != null) {
-          WebAPIs.sendNotificationToken(token: token);
-        }
+        WebAPIs.sendNotificationToken(token: token);
       }
     }
 

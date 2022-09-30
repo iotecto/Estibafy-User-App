@@ -39,7 +39,7 @@ class _ProfileState extends State<Profile> {
           physics: const BouncingScrollPhysics(),
           child: Column(
             children: [
-              Container(
+              SizedBox(
                 height: 850,
                 width: MediaQuery.of(context).size.width * 1.0,
                 child: Stack(
