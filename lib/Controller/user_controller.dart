@@ -54,7 +54,7 @@ class UserController extends GetxController {
       user.value = User(
         name: name,
         email: email,
-        userId: int.parse(id),
+        userId: id,
         phoneNumber: phone,
         password: password,
       );
@@ -106,7 +106,7 @@ class UserController extends GetxController {
         user.value = User(
           name: result['data']['user']['name'],
           email: email,
-          userId: result['data']['user']['id'],
+          userId: result['data']['user']['id'].toString(),
           phoneNumber: result['data']['user']['mobile'],
           password: password,
         );

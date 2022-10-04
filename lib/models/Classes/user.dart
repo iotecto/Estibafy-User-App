@@ -2,7 +2,7 @@ class User {
   String? imagePath;
   String name;
   String email;
-  int? userId;
+  String? userId;
   String phoneNumber;
   String? address;
   String? city;

@@ -156,7 +156,7 @@ class Invoices extends StatelessWidget {
               // ),
               FutureBuilder<InvoiceModel>(
                   future: WebAPIs.getInvoice(
-                      _userController.user.value.userId ?? 0),
+                      int.parse(_userController.user.value.userId ?? "0")),
                   builder: (context, invoices) {
                     if (invoices.hasData) {
                       if (invoices.data!.data!.isNotEmpty) {
