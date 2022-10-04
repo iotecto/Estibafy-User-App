@@ -67,7 +67,7 @@ class _PersonSignUpState extends State<PersonSignUp> {
                     style: K.textStyle3,
                     onChanged: (value) {
                       signUpController.phone =
-                          '${countryCode + signUpController.personMobileController.text}';
+                          countryCode + signUpController.personMobileController.text;
                     },
                   ),
                   Padding(
@@ -230,7 +230,7 @@ class _PersonSignUpState extends State<PersonSignUp> {
                               message: "Accept Terms and conditions please");
                         } else {
                           print(
-                              '---------userType------------${signUpController.userType}');
+                              '---------userType------------${signUpController.id}');
                           UserController _controller =
                               Get.find(tag: K.userControllerTag);
                           _controller.signUp(

@@ -58,7 +58,7 @@ class SideDrawer extends StatelessWidget {
                                       },
                                       child: CircleAvatar(
                                         backgroundColor: K.primaryColor,
-                                        child: Icon(Icons.person_outline),
+                                        child: const Icon(Icons.person_outline),
                                         radius: 32,
                                       ),
                                     ),
@@ -104,11 +104,11 @@ class SideDrawer extends StatelessWidget {
                                       style: K.textStyle2
                                           .copyWith(color: K.primaryColor),
                                     ),
-                                    Text(
-                                      'Comandato',
-                                      style: K.textStyle2
-                                          .copyWith(color: K.primaryColor),
-                                    ),
+                                    // Text(
+                                    //   'Comandato',
+                                    //   style: K.textStyle2
+                                    //       .copyWith(color: K.primaryColor),
+                                    // ),
                                   ],
                                 ),
                               ],
@@ -118,7 +118,7 @@ class SideDrawer extends StatelessWidget {
                             padding: const EdgeInsets.symmetric(horizontal: 20),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
+                              children: const [
                                 // Text(
                                 //   'Balance: \$500.00',
                                 //   style: K.textStyle2
