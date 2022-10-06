@@ -127,7 +127,9 @@ class _SummaryState extends State<Summary> {
                 IconButton(
                     onPressed: () {},
                     icon: IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
                         icon: Icon(
                           Icons.edit_outlined,
                           color: K.primaryColor,

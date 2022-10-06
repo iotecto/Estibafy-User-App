@@ -3,12 +3,12 @@ import 'package:estibafy_user/models/Classes/user.dart';
 class ExampleObjects {
   static User user = User(
     name: 'Emilia Clarke',
-    userId:123213,
+    userId: '1232',
     email: 'emiliaclarke@gmail.com',
     phoneNumber: '305-667-5677',
     password: 'meowmeow',
   );
- static List provinceChooseList =[
+  static List provinceChooseList = [
     'Guayas',
     'Alabama',
     'Alaska',
@@ -28,7 +28,7 @@ class ExampleObjects {
     'Maryland',
   ];
 
- static List countryChooseList=[
+  static List countryChooseList = [
     'Ecuador',
     'Brazil',
     'Colombia',

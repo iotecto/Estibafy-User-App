@@ -33,7 +33,7 @@ class WebAPIs {
       Uri.parse(baseURL + 'get/jobs'),
       headers: getAuthHeader(),
     );
-
+    log(r.body);
     if (validateResponse(r)) {
       return json.decode(r.body);
     }

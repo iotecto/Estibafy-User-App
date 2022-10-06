@@ -239,7 +239,6 @@ class UserController extends GetxController {
         return null;
       }
     }
-
     return await location.getLocation();
   }
 }

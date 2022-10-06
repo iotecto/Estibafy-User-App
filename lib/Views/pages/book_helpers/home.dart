@@ -58,6 +58,7 @@ class _HomeState extends State<Home> {
 Widget googleMapLocationPicker(BuildContext context) {
   return MapLocationPicker(
     showMoreOptions: false,
+    desiredAccuracy: LocationAccuracy.best,
     minMaxZoomPreference: const MinMaxZoomPreference(8, 30),
     bottomCardColor: K.primaryColor,
     bottomCardIcon: Icon(

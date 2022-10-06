@@ -255,6 +255,7 @@ class _MapLocationPickerState extends State<MapLocationPicker> {
     if (permission != LocationPermission.deniedForever ||
         permission != LocationPermission.denied) {
       Position position = await Geolocator.getCurrentPosition(
+        timeLimit: const Duration(seconds: 3),
         desiredAccuracy: widget.desiredAccuracy,
       );
       LatLng latLng = LatLng(position.latitude, position.longitude);

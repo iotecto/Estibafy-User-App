@@ -160,11 +160,9 @@ class _DatePickerState extends State<DatePicker> {
             child: child!,
           );
         },
-        initialDate: DateTime.parse(bookHelperCollectionController.startDate)
-            .add(const Duration(days: 1)),
+        initialDate: DateTime.parse(bookHelperCollectionController.startDate),
         initialDatePickerMode: DatePickerMode.day,
-        firstDate: DateTime.parse(bookHelperCollectionController.startDate)
-            .add(const Duration(days: 1)),
+        firstDate: DateTime.parse(bookHelperCollectionController.startDate),
         lastDate: DateTime(2101));
     if (picked != null) {
       setState(() {
