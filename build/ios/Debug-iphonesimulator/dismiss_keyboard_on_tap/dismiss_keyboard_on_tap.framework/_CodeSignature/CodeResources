@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bCou7KeAFo8ZiJrkmJzp3KAT6p8=
+		3xmgy9Y5SdYckERlnWziWg3MG+U=
 		</data>
 		<key>Modules/dismiss_keyboard_on_tap.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		a8Il7Mo01PUeys/qsG08RUDCivk=
+		9UZ9P3VYhTcyndZcd/ig+iPZGDk=
 		</data>
 		<key>Modules/dismiss_keyboard_on_tap.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		OUpbliCeXT8/6wxt6bbhi5eYLms=
+		E6pHb9lY2iIny/mOCbRylE7XYUI=
 		</data>
 		<key>Modules/dismiss_keyboard_on_tap.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/dismiss_keyboard_on_tap.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Rq3/m9xU6kfQgq7uCqHZHpyGE6s=
+		7sDcutmPhVTd+XD6g91iE07L2YA=
 		</data>
 		<key>Modules/dismiss_keyboard_on_tap.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YnZepwljzWLzF1hyZyQyReiyhIM=
+		zLkWYoEBuHsIbyloRXDcVy5pJuY=
 		</data>
 		<key>Modules/dismiss_keyboard_on_tap.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/dismiss_keyboard_on_tap.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xeMKByEI0gnj31J27aYMtlgns48=
+		0ADqSAx0z8ikf4Sty7Jtdea1acg=
 		</data>
 		<key>Modules/dismiss_keyboard_on_tap.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3/Q3yI2HbGFE8VxCm06Z+TVMLiI=
+		SWQ0WKYx7Mw1aEgooVeUO2cUscQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,10 +61,6 @@
 	<dict>
 		<key>Headers/DismissKeyboardOnTapPlugin.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ir70aYlttmU+lXAUsrO0HLV9rJ0=
-			</data>
 			<key>hash2</key>
 			<data>
 			t/k21PB5EiTM/6c+bdaWt831WhShIUUVN8o25SnLdas=
@@ -72,10 +68,6 @@
 		</dict>
 		<key>Headers/dismiss_keyboard_on_tap-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NcnsuqXnKxm2qwdVpZIc3pYhP0I=
-			</data>
 			<key>hash2</key>
 			<data>
 			8Yd+obG6QBLjitAu1Wf7GZhpsaB9gZg0f4Q/eaSEH9Q=
@@ -83,10 +75,6 @@
 		</dict>
 		<key>Headers/dismiss_keyboard_on_tap-umbrella.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			75Sx8qq8lxqdXm7s2RRMNaUz1VQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			Fb1rdEvTvUJjI5CRxRR69DzDoVcRxBqEzLsfB/rGUy0=
@@ -94,32 +82,20 @@
 		</dict>
 		<key>Modules/dismiss_keyboard_on_tap.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			a8Il7Mo01PUeys/qsG08RUDCivk=
-			</data>
 			<key>hash2</key>
 			<data>
-			1sdmFnAi8kf0+Llft+fWVDSUhRGuLRH6NR6fKiZOvc8=
+			Pml50LsB2VmKMjoGs1welRYHZC+YbnmtiRUJ2gTJtLI=
 			</data>
 		</dict>
 		<key>Modules/dismiss_keyboard_on_tap.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			OUpbliCeXT8/6wxt6bbhi5eYLms=
-			</data>
 			<key>hash2</key>
 			<data>
-			wQu+JMo5rJ2tx4CJvp97HYITnQeVKHyruJKIAqyWMWo=
+			cjfWlgPI6012B0DFHuXOX8LQenDoEBmRj5ksMeyXXOo=
 			</data>
 		</dict>
 		<key>Modules/dismiss_keyboard_on_tap.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FSPnLbho3G+LL9smI3XgVOqBIQ4=
-			</data>
 			<key>hash2</key>
 			<data>
 			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
@@ -127,32 +103,20 @@
 		</dict>
 		<key>Modules/dismiss_keyboard_on_tap.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Rq3/m9xU6kfQgq7uCqHZHpyGE6s=
-			</data>
 			<key>hash2</key>
 			<data>
-			+uzIIGgJb6HEaDPj6uedJcryRAeIfI5WViC7PUU/l8Q=
+			xk5GdafX3j59SQ9UbW02NRM2rPZgbsKTJAv0H0UD2nE=
 			</data>
 		</dict>
 		<key>Modules/dismiss_keyboard_on_tap.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YnZepwljzWLzF1hyZyQyReiyhIM=
-			</data>
 			<key>hash2</key>
 			<data>
-			Jol9bOb9rM5NChsbnZ0JXrUqe/qeNg4ZistTl5iain8=
+			85NvcRnqY5X0gUXSKpN9BXON8c6QDSADg2ixKyXinVs=
 			</data>
 		</dict>
 		<key>Modules/dismiss_keyboard_on_tap.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FSPnLbho3G+LL9smI3XgVOqBIQ4=
-			</data>
 			<key>hash2</key>
 			<data>
 			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
@@ -160,32 +124,20 @@
 		</dict>
 		<key>Modules/dismiss_keyboard_on_tap.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			xeMKByEI0gnj31J27aYMtlgns48=
-			</data>
 			<key>hash2</key>
 			<data>
-			ghT7v8VYBTUo0hy0c2Zhdzq28Y6bOqKCJmXLKzvSiXY=
+			dH9/Ohfcvm7Bx8jXCZ6jB6bH82jBOvm5ybYmDjFXuYY=
 			</data>
 		</dict>
 		<key>Modules/dismiss_keyboard_on_tap.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3/Q3yI2HbGFE8VxCm06Z+TVMLiI=
-			</data>
 			<key>hash2</key>
 			<data>
-			hNsJl47wfO3295X/TE5rYCgzeDnu43DWw4X6KutgNnE=
+			KBOP5aRQhW+ugX1vbKPZYDb2ACFXRJ8yJqESHDLzZ0E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tQaTRpb2VkpRVWgiHJm3Dzez/II=
-			</data>
 			<key>hash2</key>
 			<data>
 			Y1IQ9foztCT25SwlwfdAyV9R1fQa1ODyeFtzypbmNb0=

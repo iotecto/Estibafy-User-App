@@ -69,6 +69,7 @@ dependencies:
   dismiss_keyboard_on_tap: ^1.0.1
   firebase_core: ^1.14.1
   firebase_messaging: ^11.2.13
+  flutter_chips_input:
   flutter_local_notifications: ^9.4.0
   material_floating_search_bar: ^0.3.7
   sizer: ^2.0.15
@@ -87,7 +88,6 @@ dependencies:
   geolocator: ^9.0.1
   provider: ^6.0.3
   logger: ^1.1.0
-
 
 dev_dependencies:
   flutter_test:

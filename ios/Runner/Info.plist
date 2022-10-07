@@ -3,6 +3,7 @@
 <plist version="1.0">
 <dict>
 <!-- Permission options for the `location` group -->
+
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>Need location when in use</string>
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
@@ -16,6 +17,12 @@
     <key>NSCameraUsageDescription</key>
     <string>To capture profile photo please grant camera access</string>
 
+	<key>NSLocalNetworkUsageDescription</key>
+    <string>Please Allow to use Local Network Permissions</string>
+    <key>NSBonjourServices</key>
+    <array>
+    <string>_dartobservatory._tcp</string>
+    </array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -75,7 +82,7 @@
 	<true/>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
-
-
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
 </dict>
 </plist>
