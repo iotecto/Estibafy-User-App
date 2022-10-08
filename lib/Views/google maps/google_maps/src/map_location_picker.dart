@@ -3,6 +3,7 @@ import 'dart:developer';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:form_builder_extra_fields/form_builder_extra_fields.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -237,7 +238,7 @@ class _MapLocationPickerState extends State<MapLocationPicker> {
   @override
   initState() {
     super.initState();
-    getMyCurrentLocation();
+    Future.delayed(const Duration(seconds: 1), ()=> getMyCurrentLocation());
   }
 
   /// Camera position moved to location
@@ -248,7 +249,7 @@ class _MapLocationPickerState extends State<MapLocationPicker> {
     );
   }
 
-  getMyCurrentLocation() async {
+  Future<void> getMyCurrentLocation() async {
     LocationPermission permission;
     permission = await Geolocator.requestPermission();
 
@@ -262,21 +263,19 @@ class _MapLocationPickerState extends State<MapLocationPicker> {
       setState(() {
         _initialPosition = latLng;
       });
-      final controller = await _controller.future;
-      controller
-          .animateCamera(CameraUpdate.newCameraPosition(cameraPosition()));
-      _decodeAddress(Location(lat: position.latitude, lng: position.longitude));
+
     } else {
       LatLng latLng = const LatLng(37.42188076399406, -122.08408266305923);
       setState(() {
         _initialPosition = latLng;
       });
-      final controller = await _controller.future;
-      controller
-          .animateCamera(CameraUpdate.newCameraPosition(cameraPosition()));
-      _decodeAddress(Location(
-          lat: _initialPosition.latitude, lng: _initialPosition.longitude));
     }
+    final GoogleMapController controller = await _controller.future;
+   setState(() {
+     controller
+         .moveCamera(CameraUpdate.newCameraPosition(CameraPosition(target: _initialPosition, zoom: _zoom)));
+   });
+    _decodeAddress(Location(lat: _initialPosition.latitude, lng: _initialPosition.longitude));
   }
 
   @override
