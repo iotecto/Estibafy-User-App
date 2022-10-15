@@ -34,7 +34,7 @@ getAppBar(title, key, {List<Widget>? actions}) {
   );
 }
 
-getAppBar2(title, key, context) {
+getAppBar2(String title, key, context) {
   return AppBar(
     backgroundColor: K.primaryColor,
     elevation: 0.0,

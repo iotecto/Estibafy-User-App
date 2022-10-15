@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:estibafy_user/Views/Authentication%20Screens/signup.dart';
 import 'package:estibafy_user/models/utils/constants.dart';
 import 'package:flutter/material.dart';
@@ -69,7 +70,7 @@ class LoginOrCreateAccount extends StatelessWidget {
                       child: Text(
                         'Log in',
                         style: K.textStyle3.copyWith(color: K.secondaryColor),
-                      ),
+                      ).tr(),
                     ),
                   ),
                   const SizedBox(
@@ -88,11 +89,11 @@ class LoginOrCreateAccount extends StatelessWidget {
                         side: BorderSide(color: K.secondaryColor),
                       )),
                       child: Text(
-                        'Create an account',
+                        'Create Account',
                         style: K.textStyle3.copyWith(
                             color: K.secondaryColor,
                             fontWeight: FontWeight.bold),
-                      ),
+                      ).tr(),
                     ),
                   ),
                 ],

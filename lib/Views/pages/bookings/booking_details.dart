@@ -33,7 +33,7 @@ class BookingDetails extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(12.0),
                 child: Text(
-                  'Job ${job.status}',
+                  'Job ${job.status == 'inprogress' ? 'In-progress' : job.status}',
                   style: K.textStyle3,
                 ),
               ),

@@ -3,7 +3,6 @@ import 'dart:developer';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:form_builder_extra_fields/form_builder_extra_fields.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -211,6 +210,8 @@ class _MapLocationPickerState extends State<MapLocationPicker> {
   /// Map controller for movement & zoom
   final Completer<GoogleMapController> _controller = Completer();
 
+  late GoogleMapController controller;
+
   /// Search text field controller
   final TextEditingController _searchController = TextEditingController();
 
@@ -238,7 +239,7 @@ class _MapLocationPickerState extends State<MapLocationPicker> {
   @override
   initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 1), ()=> getMyCurrentLocation());
+    Future.delayed(const Duration(seconds: 1), () => getMyCurrentLocation());
   }
 
   /// Camera position moved to location
@@ -263,24 +264,27 @@ class _MapLocationPickerState extends State<MapLocationPicker> {
       setState(() {
         _initialPosition = latLng;
       });
-
     } else {
       LatLng latLng = const LatLng(37.42188076399406, -122.08408266305923);
       setState(() {
         _initialPosition = latLng;
       });
     }
-    final GoogleMapController controller = await _controller.future;
-   setState(() {
-     controller
-         .moveCamera(CameraUpdate.newCameraPosition(CameraPosition(target: _initialPosition, zoom: _zoom)));
-   });
-    _decodeAddress(Location(lat: _initialPosition.latitude, lng: _initialPosition.longitude));
+    controller = await _controller.future;
+    setState(() {
+      _lastMapPosition = _initialPosition;
+      controller.moveCamera(CameraUpdate.newCameraPosition(
+          CameraPosition(target: _initialPosition, zoom: _zoom)));
+    });
+    _decodeAddress(Location(
+        lat: _initialPosition.latitude, lng: _initialPosition.longitude));
   }
 
   @override
   dispose() {
     super.dispose();
+    controller.dispose();
+    _searchController.dispose();
     _controller.isCompleted;
   }
 

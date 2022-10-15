@@ -68,8 +68,8 @@ Widget googleMapLocationPicker(BuildContext context) {
     searchHintText: 'Search or Pick Location',
     apiKey: K.googleMapApiKey,
     showBackButton: false,
-    compassEnabled: true,
-    canPopOnNextButtonTaped: true,
+    compassEnabled: false,
+    canPopOnNextButtonTaped: false,
     onNext: (LatLng? result, GeocodingResult? address) {
       log(result!.latitude.toString());
       log(result.longitude.toString());

@@ -185,7 +185,7 @@ class Job {
   final double? longitude;
   final dynamic approvedBy;
   final List<dynamic>? packages;
-  final List<dynamic>? helpers;
+  final List<Helper>? helpers;
   final List<dynamic>? trackers;
   final Containerr? container;
 
@@ -227,7 +227,7 @@ class Job {
             : List<dynamic>.from(json["packages"].map((x) => x)),
         helpers: json["helpers"] == null
             ? null
-            : List<dynamic>.from(json["helpers"].map((x) => x)),
+            : List<Helper>.from(json["helpers"].map((x) => Helper.fromJson(x))),
         trackers: json["trackers"] == null
             ? null
             : List<dynamic>.from(json["trackers"].map((x) => x)),
@@ -321,6 +321,94 @@ class Containerr {
         "created_at": createdAt,
         "updated_at": updatedAt,
       };
+}
+
+class Helper {
+  Helper({
+    this.id,
+    this.name,
+    this.email,
+    this.mobile,
+    this.image,
+    this.accessToken,
+    this.emailVerifiedAt,
+    this.password,
+    this.rememberToken,
+    this.status,
+    this.createdBy,
+    this.updatedBy,
+    this.createdAt,
+    this.updatedAt,
+    this.latitude,
+    this.longitude,
+    this.approved,
+    this.approvedBy,
+    this.govermentId,
+    this.fcmToken,
+    this.isVerified,
+    this.apartment,
+    this.city,
+    this.province,
+    this.country,
+  });
+
+  int? id;
+  String? name;
+  String? email;
+  String? mobile;
+  String? image;
+  String? accessToken;
+  dynamic emailVerifiedAt;
+  String? password;
+  dynamic rememberToken;
+  int? status;
+  int? createdBy;
+  int? updatedBy;
+  DateTime? createdAt;
+  DateTime? updatedAt;
+  double? latitude;
+  double? longitude;
+  String? approved;
+  dynamic approvedBy;
+  int? govermentId;
+  String? fcmToken;
+  int? isVerified;
+  String? apartment;
+  String? city;
+  String? province;
+  String? country;
+
+  factory Helper.fromJson(Map<String, dynamic> json) => Helper(
+        id: json["id"] ?? 0,
+        name: json["name"] ?? null,
+        email: json["email"] ?? '',
+        mobile: json["mobile"] ?? '',
+        image: json["image"] ?? '',
+        accessToken: json["access_token"] ?? '',
+        emailVerifiedAt: json["email_verified_at"],
+        password: json["password"] ?? '',
+        rememberToken: json["remember_token"],
+        status: json["status"] ?? 0,
+        createdBy: json["created_by"] ?? 0,
+        updatedBy: json["updated_by"] ?? 0,
+        createdAt: json["created_at"] == null
+            ? null
+            : DateTime.parse(json["created_at"]),
+        updatedAt: json["updated_at"] == null
+            ? null
+            : DateTime.parse(json["updated_at"]),
+        latitude: json["latitude"] == 0.0 ? null : json["latitude"],
+        longitude: json["longitude"] == null ? 0.0 : json["longitude"],
+        approved: json["approved"] ?? '',
+        approvedBy: json["approved_by"],
+        govermentId: json["goverment_id"] ?? 0,
+        fcmToken: json["fcm_token"] ?? '',
+        isVerified: json["isVerified"] ?? 0,
+        apartment: json["apartment"] ?? '',
+        city: json["city"] ?? '',
+        province: json["province"] ?? '',
+        country: json["country"] ?? '',
+      );
 }
 
 // enum ContainerName { CONTAINE_20_FEET, CONTAINE_40_FEET }

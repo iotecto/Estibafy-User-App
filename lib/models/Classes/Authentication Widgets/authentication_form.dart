@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:email_validator/email_validator.dart';
 import 'package:estibafy_user/Controller/Authentication%20Screens%20Controllers/login_controlller.dart';
 import 'package:estibafy_user/Controller/Authentication%20Screens%20Controllers/signup_controller.dart';
@@ -41,7 +42,7 @@ class _LoginFormState extends State<LoginForm> {
                 height: 80,
               ),
               input(
-                  text: 'Email',
+                  text: tr('Email'),
                   prefix: Icons.mail,
                   controller: loginController.emailController,
                   onChanged: (value) {
@@ -49,7 +50,7 @@ class _LoginFormState extends State<LoginForm> {
                   }),
               input(
                 obscure: loginController.isPasswordVisible,
-                text: 'Password',
+                text: tr('Password'),
                 onChanged: (value) {
                   print("password is  " + value);
                   loginController.password = value;
@@ -94,7 +95,7 @@ class _LoginFormState extends State<LoginForm> {
                     );
                   }
                 },
-                text: 'Log in',
+                text: tr('Log in'),
                 textColor: K.secondaryColor,
                 arrowColor: K.secondaryColor,
                 fillColor: K.primaryColor,
@@ -122,7 +123,7 @@ class _LoginFormState extends State<LoginForm> {
                   style: K.textStyle3.copyWith(
                     color: K.primaryColor,
                   ),
-                ),
+                ).tr(),
               ),
             ),
           ],

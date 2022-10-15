@@ -54,7 +54,7 @@ class _BuildBookingInProgressCardState
         title: Column(
           children: [
             Text(
-              'Order # ${job.id}',
+              'Order # ${job.jobId}',
               style: K.textStyle5
                   .copyWith(fontSize: 15, fontWeight: FontWeight.w500),
             ),

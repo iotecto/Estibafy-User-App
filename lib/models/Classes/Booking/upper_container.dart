@@ -40,11 +40,12 @@ class UpperContainer extends StatelessWidget {
                           Container(
                             height: 80,
                             width: 80,
-                            decoration: const BoxDecoration(
+                            decoration: BoxDecoration(
+                                color: K.secondaryColor,
                                 shape: BoxShape.circle,
-                                image: DecorationImage(
-                                    image: AssetImage('assets/bookinglogo.png'),
-                                    fit: BoxFit.cover)),
+                                image: const DecorationImage(
+                                    image: AssetImage('assets/logo.png'),
+                                    fit: BoxFit.contain)),
                           ),
                           const SizedBox(
                             height: 5,
@@ -104,9 +105,19 @@ class UpperContainer extends StatelessWidget {
                         //   withNavBar: true,
                         // );
                       },
-                      icon: Icon(
-                        FontAwesomeIcons.solidMap,
-                        color: K.secondaryColor,
+                      icon: InkWell(
+                        onTap: () {
+                          Get.showSnackbar(const GetSnackBar(
+                            dismissDirection: DismissDirection.startToEnd,
+                            duration: Duration(seconds: 2),
+                            icon: Icon(Icons.info_outline_rounded, color: Colors.white,),
+                            message: 'Map tracking available soon..!',
+                          ));
+                        },
+                        child: Icon(
+                          FontAwesomeIcons.solidMap,
+                          color: K.secondaryColor,
+                        ),
                       ))
                 ],
               ),
@@ -122,7 +133,9 @@ class UpperContainer extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      job.data!.checkout!.status!,
+                      job.data!.checkout!.status! == 'inprogress'
+                          ? 'In-progress'
+                          : job.data!.checkout!.status!,
                       style: K.textStyle2.copyWith(color: K.secondaryColor),
                     ),
                     Text(
@@ -147,7 +160,9 @@ class UpperContainer extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      job.data!.checkout!.status! + ' Status',
+                      job.data!.checkout!.status! == 'inprogress'
+                          ? 'In-progress'
+                          : job.data!.checkout!.status! + ' Status',
                       // 'Waiting for start confirmation',
                       style: K.textStyle2.copyWith(color: K.secondaryColor),
                     ),

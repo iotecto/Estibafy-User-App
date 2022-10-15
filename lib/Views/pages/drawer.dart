@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
+import '../../Bindings/bindings.dart';
 import 'invoices/invoices.dart';
 
 class SideDrawer extends StatelessWidget {
@@ -150,7 +151,7 @@ class SideDrawer extends StatelessWidget {
                           Tile(
                               text: 'Settings',
                               function: () {
-                                Get.to(const SettingsScreen());
+                                Get.to(const SettingsScreen(), binding: SettingsBinding());
                               },
                               icon: Icons.settings),
                           // Tile(

@@ -1,6 +1,10 @@
+import 'package:easy_localization/easy_localization.dart';
+import 'package:estibafy_user/Controller/Setting-Controller/setttings_controller.dart';
 import 'package:estibafy_user/Controller/user_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import '../../../models/utils/constants.dart';
 import '../../../models/widgets/appbar.dart';
 
 class SettingsScreen extends StatefulWidget {
@@ -12,20 +16,99 @@ class SettingsScreen extends StatefulWidget {
 
 class _SettingsScreenState extends State<SettingsScreen> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
+  final SettingsController _settingsController = Get.find<SettingsController>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: getAppBar2('Settings', _scaffoldKey, context),
-      body: Center(
-        child: MaterialButton(
-          color: Colors.redAccent,
-          onPressed: () {
-            showAlertDialog(context);
-          },
-          child: const Text(
-            'Delete Account',
-            style: TextStyle(color: Colors.white),
-          ),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            Align(
+              alignment: Alignment.centerLeft,
+              child: const Text(
+                'Choose Language',
+                style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800),
+              ).tr(),
+            ),
+            const SizedBox(
+              height: 3.0,
+            ),
+            Material(
+              borderRadius: BorderRadius.circular(15.0),
+              elevation: 5.0,
+              child: Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(12.0),
+                decoration: BoxDecoration(
+                    color: K.secondaryColor,
+                    borderRadius: BorderRadius.circular(15.0)),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        const Text(
+                          'English',
+                          style: TextStyle(
+                            fontSize: 14,
+                          ),
+                        ).tr(),
+                        const Spacer(),
+                        Obx(
+                          () => Radio(
+                            value: _settingsController.englishLanguage.value,
+                            onChanged: (value) async {
+                              _settingsController.updateUserLanguage(
+                                  context, 'English');
+                            },
+                            groupValue: true,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const Divider(),
+                    Row(
+                      children: [
+                        const Text(
+                          'Spanish',
+                          style: TextStyle(
+                            fontSize: 14,
+                          ),
+                        ).tr(),
+                        const Spacer(),
+                        Obx(
+                          () => Radio(
+                            value: _settingsController.spanishLanguage.value,
+                            onChanged: (value) async {
+                              _settingsController.updateUserLanguage(
+                                  context, 'Spanish');
+                            },
+                            groupValue: true,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 30.0,
+            ),
+            MaterialButton(
+              color: Colors.redAccent,
+              onPressed: () {
+                showAlertDialog(context);
+              },
+              child: const Text(
+                'Delete Account',
+                style: TextStyle(color: Colors.white),
+              ).tr(),
+            ),
+          ],
         ),
       ),
     );
