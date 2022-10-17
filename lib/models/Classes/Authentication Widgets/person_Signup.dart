@@ -1,14 +1,16 @@
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:email_validator/email_validator.dart';
 import 'package:estibafy_user/Controller/Authentication%20Screens%20Controllers/signup_controller.dart';
-import 'package:estibafy_user/Controller/user_controller.dart';
 import 'package:estibafy_user/Views/pages/terms_conditions.dart';
+import 'package:estibafy_user/models/Classes/Firebase/firebase_phone_auth.dart';
 import 'package:estibafy_user/models/utils/constants.dart';
 import 'package:estibafy_user/models/widgets/inputwidgets.dart';
 import 'package:estibafy_user/models/widgets/pressedwidget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
+
+import '../../../Views/pages/sms_verification.dart';
 
 class PersonSignUp extends StatefulWidget {
   const PersonSignUp({Key? key}) : super(key: key);
@@ -66,8 +68,8 @@ class _PersonSignUpState extends State<PersonSignUp> {
                     textAlign: TextAlign.center,
                     style: K.textStyle3,
                     onChanged: (value) {
-                      signUpController.phone =
-                          countryCode + signUpController.personMobileController.text;
+                      signUpController.phone = countryCode +
+                          signUpController.personMobileController.text;
                     },
                   ),
                   Padding(
@@ -219,30 +221,14 @@ class _PersonSignUpState extends State<PersonSignUp> {
                           signUpController.confirmPassword) {
                         K.showToast(message: "Passwords don't match");
                       } else {
-                        var location = await UserController.getUserLocation();
-
-                        if (location == null) {
-                          K.showToast(
-                              message:
-                                  "Unable to get permission please allow location permission in the device settings");
-                        } else if (!signUpController.isChecked.value) {
+                        if (!signUpController.isChecked.value) {
                           K.showToast(
                               message: "Accept Terms and conditions please");
                         } else {
                           print(
                               '---------userType------------${signUpController.id}');
-                          UserController _controller =
-                              Get.find(tag: K.userControllerTag);
-                          _controller.signUp(
-                              userType: signUpController.userType,
-                              id: signUpController.id,
-                              name: signUpController.name,
-                              email: signUpController.email,
-                              phone: signUpController.phone,
-                              password: signUpController.password,
-                              confirmPassword: signUpController.confirmPassword,
-                              lat: location.latitude ?? 0.60000,
-                              lng: location.longitude ?? 0.50000);
+                          FirebasePhoneAuth().sendSms(signUpController.phone);
+                          Get.to(const VerificationCode());
                         }
                       }
                     }

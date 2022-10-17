@@ -160,20 +160,25 @@ class Invoices extends StatelessWidget {
                   builder: (context, invoices) {
                     if (invoices.hasData) {
                       if (invoices.data!.data!.isNotEmpty) {
-                        return ListView.builder(
-                            physics: const BouncingScrollPhysics(),
-                            shrinkWrap: true,
-                            itemCount: invoices.data!.data!.length,
-                            itemBuilder: (BuildContext context, int index) {
-                              return buildInvoicesCard(
-                                  context, invoices.data!.data![index], () {
-                                Navigator.push(
-                                    context,
-                                    CupertinoPageRoute(
-                                        builder: (context) => InvoicesDetail(
-                                            job: invoices.data!.data![index])));
-                              });
-                            });
+                        return Align(
+                          alignment: Alignment.topCenter,
+                          child: ListView.builder(
+                              physics: const BouncingScrollPhysics(),
+                              shrinkWrap: true,
+                              reverse: true,
+                              itemCount: invoices.data!.data!.length,
+                              itemBuilder: (BuildContext context, int index) {
+                                return buildInvoicesCard(
+                                    context, invoices.data!.data![index], () {
+                                  Navigator.push(
+                                      context,
+                                      CupertinoPageRoute(
+                                          builder: (context) => InvoicesDetail(
+                                              job: invoices
+                                                  .data!.data![index])));
+                                });
+                              }),
+                        );
                       } else {
                         return const Center(
                           child: Text('Empty list'),

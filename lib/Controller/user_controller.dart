@@ -66,9 +66,6 @@ class UserController extends GetxController {
       //     .write(result['data']['token']['access_token'], user.value);
 
       K.showToast(message: 'Welcome ${user.value.name}');
-      Get.to(() => VerificationCode(
-            mobileNo: phone,
-          ));
       String? token = await FCMNotifications.messaging.getToken();
       if (token != null) {
         WebAPIs.sendNotificationToken(token: token);
@@ -130,6 +127,7 @@ class UserController extends GetxController {
     EasyLoading.dismiss();
   }
 
+  // Firebase OTP Verifications
   void otpVerify({
     required String otp,
     required String mobile,

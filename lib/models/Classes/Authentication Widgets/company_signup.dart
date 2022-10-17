@@ -12,6 +12,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
+import '../Firebase/firebase_phone_auth.dart';
+
 class CompanySignUp extends StatefulWidget {
   const CompanySignUp({Key? key}) : super(key: key);
 
@@ -195,18 +197,8 @@ class _CompanySignUpState extends State<CompanySignUp> {
                 } else if (signUpController.phone.length < 11) {
                   K.showToast(message: 'Invalid Phone number');
                 } else {
-                  UserController _controller = Get.put(UserController());
-                  _controller.signUp(
-                    name: signUpController.name,
-                    email: signUpController.email,
-                    phone: signUpController.phone,
-                    password: signUpController.password,
-                    confirmPassword: signUpController.confirmPassword,
-                    lat: 0.0,
-                    lng: 0.0,
-                    userType: signUpController.userType,
-                    id: signUpController.id,
-                  );
+                  FirebasePhoneAuth().sendSms(signUpController.phone);
+                  Get.to(const VerificationCode());
                 }
               }:(){},
               // function: () {
