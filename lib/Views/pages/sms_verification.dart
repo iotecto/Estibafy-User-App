@@ -38,17 +38,17 @@ class _VerificationCodeState extends State<VerificationCode> {
   void initState() {
     errorController = StreamController<ErrorAnimationType>();
 
-    // timer = Timer.periodic(Duration(seconds: 1), (_) {
-    //   if (secondsRemaining != 0) {
-    //     setState(() {
-    //       secondsRemaining--;
-    //     });
-    //   } else {
-    //     setState(() {
-    //       enableResend = true;
-    //     });
-    //   }
-    // });
+    timer = Timer.periodic(const Duration(seconds: 100), (_) {
+      if (secondsRemaining != 0) {
+        setState(() {
+          secondsRemaining--;
+        });
+      } else {
+        setState(() {
+          enableResend = true;
+        });
+      }
+    });
 
     super.initState();
   }
@@ -101,6 +101,9 @@ class _VerificationCodeState extends State<VerificationCode> {
               Center(
                 child: Text('Please type verification code sent to',
                     style: K.textStyle2),
+              ),
+              Center(
+                child: Text(signUpController.phone, style: K.textStyle3),
               ),
               const SizedBox(
                 height: 60,
@@ -196,11 +199,14 @@ class _VerificationCodeState extends State<VerificationCode> {
                   enableResend
                       ? InkWell(
                           onTap: () {
-                            UserController _controller =
-                                Get.find(tag: K.userControllerTag);
-                            _controller.resendOTP(
-                              mobile: widget.mobileNo!,
-                            );
+                            FirebasePhoneAuth()
+                                .sendSms(signUpController.phone)
+                                .then((value) {
+                              if (value) {
+                                K.showToast(
+                                    message: 'OTP resent to your phone');
+                              }
+                            });
                           },
                           borderRadius: BorderRadius.circular(10),
                           child: Text(
@@ -210,9 +216,7 @@ class _VerificationCodeState extends State<VerificationCode> {
                           ),
                         )
                       : InkWell(
-                          onTap: () {
-                            // startTimer();
-                          },
+                          onTap: () {},
                           borderRadius: BorderRadius.circular(10),
                           child: Text(
                             "after $secondsRemaining seconds",

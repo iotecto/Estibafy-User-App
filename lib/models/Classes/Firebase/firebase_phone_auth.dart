@@ -6,7 +6,7 @@ import '../../utils/constants.dart';
 String verificationID = '';
 
 class FirebasePhoneAuth {
-  Future<void> sendSms(String phoneNumber) async {
+  Future<bool> sendSms(String phoneNumber) async {
     try {
       await FirebaseAuth.instance.verifyPhoneNumber(
         phoneNumber: phoneNumber,
@@ -17,13 +17,16 @@ class FirebasePhoneAuth {
         },
         codeAutoRetrievalTimeout: (String verificationId) {},
       );
+      return true;
     } on FirebaseAuthException catch (e) {
       EasyLoading.dismiss();
       if (e.code == 'invalid-verification-code') {
         K.showToast(message: 'Invalid Code try again!');
+        return false;
       } else {
         EasyLoading.dismiss();
         K.showToast(message: '$e');
+        return false;
       }
     }
   }
