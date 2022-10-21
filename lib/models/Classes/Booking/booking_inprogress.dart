@@ -26,6 +26,7 @@ class BookingInProgress extends StatelessWidget {
     return Scaffold(
       body: (listData.isNotEmpty)
           ? ListView.builder(
+              padding: const EdgeInsets.symmetric(horizontal: 15.0),
               physics: const BouncingScrollPhysics(),
               itemCount: listData.length,
               itemBuilder: (BuildContext context, int index) {

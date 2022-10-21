@@ -62,7 +62,12 @@ Widget bottomSheetHeader(
   return Container(
     height: 90.0,
     decoration: BoxDecoration(
-        color: Colors.white, border: Border.all(color: Colors.grey)),
+        borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(12.0),
+          topRight: Radius.circular(12.0),
+        ),
+        color: Colors.white,
+        border: Border.all(color: K.primaryColor, width: 1.5)),
     child: Center(
       child: Column(
         children: [

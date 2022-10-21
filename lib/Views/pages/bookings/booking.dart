@@ -75,68 +75,70 @@ class _BookingState extends State<Booking> with SingleTickerProviderStateMixin {
       body: Stack(
         children: [
           Container(
-            margin: const EdgeInsets.symmetric(horizontal: 15),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(
                   height: 20,
                 ),
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30),
-                    border: Border.all(color: K.sixthColor, width: 0.5),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(1.0),
-                    child: Align(
-                      alignment: Alignment.topCenter,
-                      child: CupertinoTabBar.CupertinoTabBar(
-                        Colors.transparent,
-                        K.primaryColor,
-                        [
-                          Text(
-                            "Pending",
-                            style: K.textStyle2.copyWith(
-                                color: cupertinoTabBarIIIValue == 0
-                                    ? K.secondaryColor
-                                    : K.primaryColor),
-                            textAlign: TextAlign.center,
-                          ),
-                          Text(
-                            "In Progress",
-                            style: K.textStyle2.copyWith(
-                                color: cupertinoTabBarIIIValue == 1
-                                    ? K.secondaryColor
-                                    : K.primaryColor),
-                            textAlign: TextAlign.center,
-                          ),
-                          Text(
-                            "Completed",
-                            style: K.textStyle2.copyWith(color: K.fifthColor),
-                            textAlign: TextAlign.center,
-                          ),
-                          Text(
-                            "Cancelled",
-                            style:
-                                K.textStyle2.copyWith(color: K.thirteenColor),
-                            textAlign: TextAlign.center,
-                          ),
-                        ],
-                        cupertinoTabBarIIIValueGetter,
-                        (int index) {
-                          setState(() {
-                            cupertinoTabBarIIIValue = index;
-                          });
-                        },
-                        useShadow: false,
-                        allowExpand: true,
-                        useSeparators: false,
-                        innerVerticalPadding: 14,
-                        innerHorizontalPadding: 15,
-                        outerHorizontalPadding: 15,
-                        outerVerticalPadding: 12,
-                        borderRadius: BorderRadius.circular(30),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      border: Border.all(color: K.sixthColor, width: 0.5),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(1.0),
+                      child: Align(
+                        alignment: Alignment.topCenter,
+                        child: CupertinoTabBar.CupertinoTabBar(
+                          Colors.transparent,
+                          K.primaryColor,
+                          [
+                            Text(
+                              "Pending",
+                              style: K.textStyle2.copyWith(
+                                  color: cupertinoTabBarIIIValue == 0
+                                      ? K.secondaryColor
+                                      : K.primaryColor),
+                              textAlign: TextAlign.center,
+                            ),
+                            Text(
+                              "In Progress",
+                              style: K.textStyle2.copyWith(
+                                  color: cupertinoTabBarIIIValue == 1
+                                      ? K.secondaryColor
+                                      : K.primaryColor),
+                              textAlign: TextAlign.center,
+                            ),
+                            Text(
+                              "Completed",
+                              style: K.textStyle2.copyWith(color: K.fifthColor),
+                              textAlign: TextAlign.center,
+                            ),
+                            Text(
+                              "Cancelled",
+                              style:
+                                  K.textStyle2.copyWith(color: K.thirteenColor),
+                              textAlign: TextAlign.center,
+                            ),
+                          ],
+                          cupertinoTabBarIIIValueGetter,
+                          (int index) {
+                            setState(() {
+                              cupertinoTabBarIIIValue = index;
+                            });
+                          },
+                          useShadow: false,
+                          allowExpand: true,
+                          useSeparators: false,
+                          innerVerticalPadding: 14,
+                          innerHorizontalPadding: 15,
+                          outerHorizontalPadding: 15,
+                          outerVerticalPadding: 12,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
                       ),
                     ),
                   ),

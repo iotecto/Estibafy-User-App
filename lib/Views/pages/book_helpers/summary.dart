@@ -399,7 +399,7 @@ class _SummaryState extends State<Summary> {
                   pushNewScreenWithRouteSettings(
                     context,
                     settings: const RouteSettings(name: '/findingHelpers'),
-                    screen: FindingHelpers(orderID: result),
+                    screen: FindingHelpers(orderID: widget.response['job_id']),
                     withNavBar: true,
                   );
                 } else {

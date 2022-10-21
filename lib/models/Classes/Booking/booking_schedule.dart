@@ -66,6 +66,7 @@ class _BookingInProgressState extends State<PendingBooking>
         children: [
           (listData.isNotEmpty)
               ? ListView.builder(
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
                   physics: const BouncingScrollPhysics(),
                   itemCount: listData.length,
                   itemBuilder: (BuildContext context, int index) {
@@ -100,7 +101,7 @@ class _BookingInProgressState extends State<PendingBooking>
               }
               if (ifAllHelpersBooked) {
                 return Container(
-                  color: Colors.white,
+                  color: Colors.blueGrey[100],
                   child: ListView.builder(
                     itemCount: 1,
                     itemBuilder: (context, index) {
@@ -136,7 +137,7 @@ class _BookingInProgressState extends State<PendingBooking>
                 );
               } else {
                 return Container(
-                  color: Colors.white,
+                  color: Colors.blueGrey[100],
                   child: LiveGrid.options(
                     controller: scrollController,
                     options: const LiveOptions(
