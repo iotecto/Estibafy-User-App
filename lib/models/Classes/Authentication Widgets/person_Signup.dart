@@ -49,6 +49,8 @@ class _PersonSignUpState extends State<PersonSignUp> {
               // showFlag: false,
               onChanged: (value) {
                 countryCode = value.toString();
+                signUpController.phone =
+                    countryCode + signUpController.personMobileController.text;
               },
             ),
             Expanded(

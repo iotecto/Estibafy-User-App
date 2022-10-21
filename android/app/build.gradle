@@ -54,7 +54,7 @@ android {
         applicationId "estibafy.com.estibafy_user"
         minSdkVersion 22
         targetSdkVersion flutter.targetSdkVersion
-        versionCode 6
+        versionCode 7
         versionName flutterVersionName
     }
 
