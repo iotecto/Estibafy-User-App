@@ -73,11 +73,11 @@ class InvoicesDetail extends StatelessWidget {
                                   height: 5.0,
                                 ),
                                 Text(
-                                  "Start Date :${DateFormat('yy-MM-dd' '   @' 'kk:mm a').format(job.job!.startTime!)}",
+                                  "Start Date : ${DateFormat('yy-MM-dd' '   @' 'kk:mm a').format(job.job!.startTime!)}",
                                   style: K.textStyle3,
                                 ),
                                 Text(
-                                  "End Date :${DateFormat('yy-MM-dd' '     @' 'kk:mm a').format(job.job!.endTime!)}",
+                                  "End Date : ${DateFormat('yy-MM-dd' '     @' 'kk:mm a').format(job.job!.endTime!)}",
                                   style: K.textStyle3,
                                 ),
                               ],
@@ -90,50 +90,57 @@ class InvoicesDetail extends StatelessWidget {
                               width: 60,
                               child: IconButton(
                                   onPressed: () async {
-                                    final date = DateTime.now();
-                                    final dueDate =
-                                        date.add(const Duration(days: 7));
                                     final invoice = Invoice(
+                                      taxRate: job.taxRate!,
+                                      subTotal: job.subTotal!,
+                                      total: job.total!,
                                       customer: const Customer(
                                         name: 'Apple Inc.',
                                         address:
                                             'Apple Street, Cupertino, CA 95014',
                                       ),
                                       info: InvoiceInfo(
-                                        date: date,
-                                        dueDate: dueDate,
+                                        startDate: DateFormat(
+                                                'yy-MM-dd' '   @' 'kk:mm a')
+                                            .format(job.job!.startTime!),
+                                        endDate: DateFormat(
+                                                'yy-MM-dd' '   @' 'kk:mm a')
+                                            .format(job.job!.endTime!),
                                         // description: '',
-                                        number: '#${DateTime.now().year}9999',
+                                        number: '#${job.jobId}',
                                       ),
                                       items: [
-                                        const InvoiceItem(
+                                        InvoiceItem(
                                           description: 'Base Fare',
                                           // date: DateTime.now(),
                                           // quantity: 3,
                                           // vat: 0.19,
-                                          unitPrice: 25.00,
+                                          unitPrice:
+                                              double.parse(job.baseFare!),
                                         ),
-                                        const InvoiceItem(
-                                          description: 'Helpers (5)',
+                                        InvoiceItem(
+                                          description:
+                                              'Helpers (${job.totalHelpers})',
                                           // date: DateTime.now(),
                                           // quantity: 8,
                                           // vat: 0.19,
-                                          unitPrice: 100.00,
+                                          unitPrice: job.totalHelpers! *
+                                              double.parse(job.baseFare!),
                                         ),
-
                                         // InvoiceItem(
                                         //   description: 'Tax(12%)',
                                         //   // date: DateTime.now(),
                                         //   // quantity: 3,
                                         //   // vat: 0.19,
-                                        //   unitPrice: 42.00,
+                                        //   unitPrice: double.parse(job.taxRate!),
                                         // ),
                                         // InvoiceItem(
                                         //   description: 'SUB-TOTAL',
                                         //   // date: DateTime.now(),
                                         //   // quantity: 3,
                                         //   // vat: 0.19,
-                                        //   unitPrice: 125.00,
+                                        //   unitPrice:
+                                        //       double.parse(job.subTotal!),
                                         // ),
                                       ],
                                     );

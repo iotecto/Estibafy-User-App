@@ -1,9 +1,7 @@
 import 'dart:io';
-import 'package:estibafy_user/Utility.dart';
+
 import 'package:estibafy_user/Views/pages/invoices/api/pdf_api.dart';
 import 'package:estibafy_user/Views/pages/invoices/model/invoice.dart';
-import 'package:intl/intl.dart';
-
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 import 'package:pdf/widgets.dart';
@@ -67,16 +65,17 @@ class PdfInvoiceApi {
   //     );
 
   static Widget buildInvoiceInfo(InvoiceInfo info) {
-    final paymentTerms = '${info.dueDate.difference(info.date).inDays} days';
     final titles = <String>[
-      'Invoice Number:',
-      '${DateFormat.yMMMd().format(DateTime.now())}',
+      'Invoice Number: ',
+      'Start date: ',
+      'End Date: '
       // 'Payment Terms:',
       // 'Due Date:'
     ];
     final data = <String>[
       info.number,
-      '@${DateFormat.jm().format(DateTime.now())}',
+      info.startDate,
+      info.endDate
       // Utils.formatDate(info.date),
       // paymentTerms,
       // Utils.formatDate(info.dueDate),
@@ -133,7 +132,7 @@ class PdfInvoiceApi {
         // '${item.quantity}',
         // '\$ ${item.unitPrice}',
         // '${item.vat} %',
-        '\$ ${total.toStringAsFixed(2)}',
+        '\$ ${total!.toStringAsFixed(2)}',
       ];
     }).toList();
 
@@ -176,19 +175,19 @@ class PdfInvoiceApi {
                 SizedBox(height: 10),
                 buildText(
                   title: 'Tax(12%)',
-                  value: "\$42.00",
+                  value: "\$ ${invoice.taxRate}",
                   unite: true,
                 ),
                 SizedBox(height: 10),
                 buildText(
                   title: 'SUB-TOTAL',
-                  value: "\$125.00",
+                  value: "\$ ${invoice.subTotal}",
                   unite: true,
                 ),
                 Divider(),
                 buildText(
                   title: 'Total',
-                  value: "\$392.00",
+                  value: "\$ ${invoice.total}",
                   unite: true,
                 ),
                 // Divider(),

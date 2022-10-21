@@ -1,12 +1,15 @@
 import 'dart:async';
+
 import 'package:estibafy_user/Controller/user_controller.dart';
+import 'package:estibafy_user/models/Classes/Firebase/firebase_phone_auth.dart';
 import 'package:estibafy_user/models/utils/constants.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_countdown_timer/flutter_countdown_timer.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
+
+import '../../Controller/Authentication Screens Controllers/signup_controller.dart';
 
 class VerificationCode extends StatefulWidget {
   final String? mobileNo;
@@ -18,6 +21,7 @@ class VerificationCode extends StatefulWidget {
 
 class _VerificationCodeState extends State<VerificationCode> {
   TextEditingController textEditingController = TextEditingController();
+  SignUpController signUpController = Get.put(SignUpController());
 
   int secondsRemaining = 60;
   bool enableResend = true;
@@ -136,16 +140,27 @@ class _VerificationCodeState extends State<VerificationCode> {
                   errorAnimationController: errorController,
                   controller: textEditingController,
                   keyboardType: TextInputType.number,
-                  onCompleted: (v) {
-                    if (kDebugMode) {
-                      UserController _controller =
-                          Get.find(tag: K.userControllerTag);
-                      _controller.otpVerify(
-                          mobile: widget.mobileNo!,
-                          otp: textEditingController.text);
+                  onCompleted: (v) async {
+                    var location = await UserController.getUserLocation();
+                    print('Phone Auth Started----------------------------');
+                    FirebasePhoneAuth().verifyPhone(v).then((value) {
+                      if (value) {
+                        UserController _controller =
+                            Get.find(tag: K.userControllerTag);
+                        _controller.signUp(
+                            userType: signUpController.userType,
+                            id: signUpController.id,
+                            name: signUpController.name,
+                            email: signUpController.email,
+                            phone: signUpController.phone,
+                            password: signUpController.password,
+                            confirmPassword: signUpController.confirmPassword,
+                            lat: location?.latitude ?? 0.60000,
+                            lng: location?.longitude ?? 0.50000);
+                      }
+                    });
 
-                      print("Completed");
-                    }
+                    print("Completed");
                   },
                   onTap: () {
                     if (kDebugMode) {

@@ -69,7 +69,7 @@ dependencies:
   intl_phone_field: ^3.0.1
   dio: ^4.0.4
   dismiss_keyboard_on_tap: ^1.0.1
-  firebase_core: ^1.14.1
+  firebase_core: any
   firebase_messaging: ^11.2.13
   flutter_chips_input:
   flutter_local_notifications: ^9.4.0
@@ -79,11 +79,10 @@ dependencies:
   location: ^4.3.0
   pdf: ^3.8.0
   path_provider: ^2.0.10
-  open_file: ^3.2.1
   url_launcher: ^6.1.2
-
+  flutter_pdfview: ^1.2.5
+  firebase_auth: ^3.11.2
   google_maps_flutter: ^2.1.6
-
   form_builder_extra_fields: ^8.3.0
   google_maps_webservice: ^0.0.20-nullsafety.5
   google_maps_flutter_web: ^0.4.0+1
