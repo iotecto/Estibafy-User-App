@@ -141,27 +141,26 @@ class _VerificationCodeState extends State<VerificationCode> {
                   controller: textEditingController,
                   keyboardType: TextInputType.number,
                   onCompleted: (v) async {
-                    if (kDebugMode) {
-                      var location = await UserController.getUserLocation();
-                      FirebasePhoneAuth().verifyPhone(v).then((value) {
-                        if (value) {
-                          UserController _controller =
-                              Get.find(tag: K.userControllerTag);
-                          _controller.signUp(
-                              userType: signUpController.userType,
-                              id: signUpController.id,
-                              name: signUpController.name,
-                              email: signUpController.email,
-                              phone: signUpController.phone,
-                              password: signUpController.password,
-                              confirmPassword: signUpController.confirmPassword,
-                              lat: location?.latitude ?? 0.60000,
-                              lng: location?.longitude ?? 0.50000);
-                        }
-                      });
+                    var location = await UserController.getUserLocation();
+                    print('Phone Auth Started----------------------------');
+                    FirebasePhoneAuth().verifyPhone(v).then((value) {
+                      if (value) {
+                        UserController _controller =
+                            Get.find(tag: K.userControllerTag);
+                        _controller.signUp(
+                            userType: signUpController.userType,
+                            id: signUpController.id,
+                            name: signUpController.name,
+                            email: signUpController.email,
+                            phone: signUpController.phone,
+                            password: signUpController.password,
+                            confirmPassword: signUpController.confirmPassword,
+                            lat: location?.latitude ?? 0.60000,
+                            lng: location?.longitude ?? 0.50000);
+                      }
+                    });
 
-                      print("Completed");
-                    }
+                    print("Completed");
                   },
                   onTap: () {
                     if (kDebugMode) {

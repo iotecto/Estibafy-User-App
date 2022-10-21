@@ -7,15 +7,25 @@ String verificationID = '';
 
 class FirebasePhoneAuth {
   Future<void> sendSms(String phoneNumber) async {
-    await FirebaseAuth.instance.verifyPhoneNumber(
-      phoneNumber: phoneNumber,
-      verificationCompleted: (PhoneAuthCredential credential) {},
-      verificationFailed: (FirebaseAuthException e) {},
-      codeSent: (String verificationId, int? resendToken) {
-        verificationID = verificationId;
-      },
-      codeAutoRetrievalTimeout: (String verificationId) {},
-    );
+    try {
+      await FirebaseAuth.instance.verifyPhoneNumber(
+        phoneNumber: phoneNumber,
+        verificationCompleted: (PhoneAuthCredential credential) {},
+        verificationFailed: (FirebaseAuthException e) {},
+        codeSent: (String verificationId, int? resendToken) {
+          verificationID = verificationId;
+        },
+        codeAutoRetrievalTimeout: (String verificationId) {},
+      );
+    } on FirebaseAuthException catch (e) {
+      EasyLoading.dismiss();
+      if (e.code == 'invalid-verification-code') {
+        K.showToast(message: 'Invalid Code try again!');
+      } else {
+        EasyLoading.dismiss();
+        K.showToast(message: '$e');
+      }
+    }
   }
 
   Future<bool> verifyPhone(
