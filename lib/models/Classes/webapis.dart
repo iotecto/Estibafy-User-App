@@ -222,7 +222,7 @@ class WebAPIs {
       body = json.decode(r.body);
       print(body);
     } catch (e) {
-      print(e);
+      K.showToast(message: '$e');
       return false;
     }
 
