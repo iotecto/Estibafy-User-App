@@ -22,7 +22,7 @@ class PersonSignUp extends StatefulWidget {
 class _PersonSignUpState extends State<PersonSignUp> {
   SignUpController signUpController = Get.put(SignUpController());
   //initial country code
-  String countryCode = "+593 ";
+  String countryCode = "+593";
   @override
   Widget build(BuildContext context) {
     return Column(
