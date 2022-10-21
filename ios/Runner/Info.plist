@@ -2,25 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Need location when in use</string>
-    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>Always and when in use!</string>
-    <key>NSLocationUsageDescription</key>
-    <string>Older devices need location.</string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>Can I have location always?</string>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>App needs access to photo lib for profile images</string>
-    <key>NSCameraUsageDescription</key>
-    <string>To capture profile photo please grant camera access</string>
-
-    <key>NSLocalNetworkUsageDescription</key>
-    <string>Please Allow to use Local Network Permissions</string>
-    <key>NSBonjourServices</key>
-    <array>
-    <string>_dartobservatory._tcp</string>
-    </array>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>CFBundleLocalizations</key>
@@ -62,19 +43,19 @@
 		<string>_dartobservatory._tcp</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
-	<string>This app requires access to Camera.</string>
+	<string>This app requires access to Camera. For profile images of job Images.</string>
 	<key>NSLocalNetworkUsageDescription</key>
-	<string>Please Allow to use Local Network Permissions</string>
+	<string>Please Allow to use Local Network Permissions. To determine the position for the job request.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Always and when in use!</string>
+	<string>Always and when in use! To determine the position to the job request.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Can I have location always?</string>
+	<string>Can I have location always?To dtermine the position for the job request.</string>
 	<key>NSLocationUsageDescription</key>
-	<string>Older devices need location.</string>
+	<string>Older devices need location. To dtermine the position for the job request.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Permission to get your location</string>
+	<string>Permission to get your location. To determine the position for the job request</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app requires access to photo library.</string>
+	<string>This app requires access to photo library. For adding profile image or job images.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UIBackgroundModes</key>
