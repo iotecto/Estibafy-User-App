@@ -220,27 +220,17 @@ class WebAPIs {
     final Map<String, dynamic> body;
     try {
       body = json.decode(r.body);
-      print(body);
+      if (r.statusCode == 200) {
+        return true;
+      } else {
+        String errorMessage =
+            body['message']['mobile'][0]; //getErrorMessage(body['message']);
+        K.showToast(message: errorMessage);
+        return false;
+      }
     } catch (e) {
       K.showToast(message: '$e');
       return false;
-    }
-
-    if (r.statusCode == 200) {
-      return true;
-    } else {
-      try {
-        String errorMessage =
-            body['message']; //getErrorMessage(body['message']);
-        K.showToast(
-            message: errorMessage == ''
-                ? '${r.statusCode}: ${body['message']}'
-                : errorMessage);
-        return false;
-      } catch (e) {
-        K.showToast(message: 'API Error');
-        return false;
-      }
     }
   }
 
