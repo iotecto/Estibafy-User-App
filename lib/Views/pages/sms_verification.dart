@@ -224,14 +224,14 @@ class _VerificationCodeState extends State<VerificationCode> {
                                 K.textStyle2.copyWith(color: K.tertiaryColor),
                           ),
                         ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      FontAwesomeIcons.arrowCircleRight,
-                      size: 26,
-                    ),
-                    color: K.fourthColor,
-                  ),
+                  // IconButton(
+                  //   onPressed: () {},
+                  //   icon: const Icon(
+                  //     FontAwesomeIcons.arrowCircleRight,
+                  //     size: 26,
+                  //   ),
+                  //   color: K.fourthColor,
+                  // ),
                 ],
               ),
               const SizedBox(

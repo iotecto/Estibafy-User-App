@@ -3,7 +3,7 @@ import 'dart:io';
 
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:estibafy_user/Views/Authentication%20Screens/login_createaccount.dart';
-import 'package:estibafy_user/Views/pages/sms_verification.dart';
+import 'package:estibafy_user/Views/pages/book_helpers/home.dart';
 import 'package:estibafy_user/models/Classes/user.dart';
 import 'package:estibafy_user/models/Classes/webapis.dart';
 import 'package:estibafy_user/models/Example%20Object/example_objects.dart';
@@ -64,7 +64,7 @@ class UserController extends GetxController {
       // userToken = result['data']['token']['access_token'];
       // K.localStorage
       //     .write(result['data']['token']['access_token'], user.value);
-
+      Get.to(const Home());
       K.showToast(message: 'Welcome ${user.value.name}');
       String? token = await FCMNotifications.messaging.getToken();
       if (token != null) {
