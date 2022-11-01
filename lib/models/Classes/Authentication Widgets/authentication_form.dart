@@ -13,6 +13,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
 import '../../../Controller/user_controller.dart';
+import '../../../Views/Authentication Screens/forgot_password_screen.dart';
 import 'company_signup.dart';
 
 class LoginForm extends StatefulWidget {
@@ -73,6 +74,21 @@ class _LoginFormState extends State<LoginForm> {
                       color: K.tenthColor,
                     )),
               ),
+              const SizedBox(
+                height: 5.0,
+              ),
+              Padding(
+                padding: EdgeInsets.only(right: 10.0),
+                child: InkWell(
+                  onTap: () {
+                    Get.to(ForgotPassword());
+                  },
+                  child: const Align(
+                    alignment: Alignment.centerRight,
+                    child: Text('Forgot password?'),
+                  ),
+                ),
+              )
             ],
           ),
         ),

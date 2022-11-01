@@ -7,12 +7,14 @@ class JobAcceptedHelpersWidget extends StatelessWidget {
       required this.helperName,
       required this.helperEmail,
       required this.color,
+      required this.helperStatus,
       required this.helperContact})
       : super(key: key);
 
   final String? helperImage;
   final String? helperName;
   final String? helperEmail;
+  final String? helperStatus;
   final Color color;
   final String? helperContact;
 
@@ -46,8 +48,32 @@ class JobAcceptedHelpersWidget extends StatelessWidget {
               Text(helperContact!)
             ],
           ),
-          Spacer(),
-          Icon(
+          const Spacer(),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text('status'),
+              const SizedBox(
+                height: 3.0,
+              ),
+              Text(
+                helperStatus! == 'accepted'
+                    ? 'Accepted'
+                    : helperStatus! == 'completed'
+                        ? 'Completed'
+                        : 'Started',
+                style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    color: helperStatus! == 'accepted'
+                        ? Colors.lightBlue
+                        : helperStatus! == 'completed'
+                            ? Colors.teal
+                            : Colors.green[400]),
+              ),
+            ],
+          ),
+          const Spacer(),
+          const Icon(
             Icons.check_circle,
             size: 30.0,
             color: Colors.green,

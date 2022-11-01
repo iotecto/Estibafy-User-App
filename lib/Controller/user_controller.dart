@@ -2,6 +2,7 @@ import 'dart:developer';
 import 'dart:io';
 
 import 'package:device_info_plus/device_info_plus.dart';
+import 'package:estibafy_user/Views/Authentication%20Screens/login.dart';
 import 'package:estibafy_user/Views/Authentication%20Screens/login_createaccount.dart';
 import 'package:estibafy_user/Views/pages/book_helpers/home.dart';
 import 'package:estibafy_user/models/Classes/user.dart';
@@ -199,6 +200,18 @@ class UserController extends GetxController {
     }
 
     EasyLoading.dismiss();
+  }
+
+  void forgotPassword(String email) async {
+    print("im going to call apis");
+    EasyLoading.show();
+    final Map<String, dynamic>? result =
+        await WebAPIs.forgotPassword(email: email);
+    EasyLoading.dismiss();
+    K.showToast(message: '${result!['message']}');
+    if (result['status'] == 200) {
+      Get.to(const Login());
+    }
   }
 
   void deleteAccount() {

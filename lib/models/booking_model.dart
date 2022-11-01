@@ -165,6 +165,7 @@ class Job {
     this.helpers,
     this.trackers,
     this.container,
+    this.jobHelpers,
   });
 
   final int? id;
@@ -188,6 +189,7 @@ class Job {
   final List<Helper>? helpers;
   final List<dynamic>? trackers;
   final Containerr? container;
+  List<JobHelper>? jobHelpers;
 
   factory Job.fromJson(String str) => Job.fromMap(json.decode(str));
 
@@ -234,6 +236,10 @@ class Job {
         container: json["container"] == null
             ? null
             : Containerr.fromMap(json["container"]),
+        jobHelpers: json["job_helpers"] == null
+            ? null
+            : List<JobHelper>.from(
+                json["job_helpers"].map((x) => JobHelper.fromJson(x))),
       );
 
   Map<String, dynamic> toMap() => {
@@ -409,6 +415,65 @@ class Helper {
         province: json["province"] ?? '',
         country: json["country"] ?? '',
       );
+}
+
+class JobHelper {
+  JobHelper({
+    this.id,
+    this.jobId,
+    this.userId,
+    this.helperId,
+    this.status,
+    this.jobCommentStatus,
+    this.jobCompletionStatus,
+    this.approvedBy,
+    this.createdAt,
+    this.updatedAt,
+  });
+
+  int? id;
+  int? jobId;
+  int? userId;
+  int? helperId;
+  String? status;
+  String? jobCommentStatus;
+  dynamic jobCompletionStatus;
+  String? approvedBy;
+  DateTime? createdAt;
+  DateTime? updatedAt;
+
+  factory JobHelper.fromJson(Map<String, dynamic> json) => JobHelper(
+        id: json["id"] == null ? null : json["id"],
+        jobId: json["job_id"] == null ? null : json["job_id"],
+        userId: json["user_id"] == null ? null : json["user_id"],
+        helperId: json["helper_id"] == null ? null : json["helper_id"],
+        status: json["status"] == null ? null : json["status"],
+        jobCommentStatus: json["job_comment_status"] == null
+            ? null
+            : json["job_comment_status"],
+        jobCompletionStatus: json["job_completion_status"],
+        approvedBy: json["approved_by"] == null ? null : json["approved_by"],
+        createdAt: json["created_at"] == null
+            ? null
+            : DateTime.parse(json["created_at"]),
+        updatedAt: json["updated_at"] == null
+            ? null
+            : DateTime.parse(json["updated_at"]),
+      );
+
+  Map<String, dynamic> toJson() => {
+        "id": id == null ? null : id,
+        "job_id": jobId == null ? null : jobId,
+        "user_id": userId == null ? null : userId,
+        "helper_id": helperId == null ? null : helperId,
+        "status": status == null ? null : status,
+        "job_comment_status":
+            jobCommentStatus == null ? null : jobCommentStatus,
+        "job_completion_status": jobCompletionStatus,
+        "approved_by": approvedBy == null ? null : approvedBy,
+        "created_at": createdAt == null ? null : createdAt!.toIso8601String(),
+        "updated_at": updatedAt == null ? null : updatedAt!.toIso8601String(),
+      };
 }
 
 // enum ContainerName { CONTAINE_20_FEET, CONTAINE_40_FEET }
