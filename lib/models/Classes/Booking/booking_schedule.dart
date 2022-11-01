@@ -151,7 +151,8 @@ class _BookingInProgressState extends State<PendingBooking>
                       if (index == 0) {
                         return bottomSheetHeader(
                             jobId: '${pendingJob.jobId}',
-                            totalHelpers: '${pendingJob.totalHelpers}');
+                            totalHelpers: '${pendingJob.totalHelpers}',
+                            title: 'Confirmed Helpers');
                       } else if (index.floor().isEven) {
                         return FadeTransition(
                             opacity: Tween<double>(
@@ -171,7 +172,9 @@ class _BookingInProgressState extends State<PendingBooking>
                                     pendingJob.job!.helpers![index - 1].email,
                                 helperContact:
                                     pendingJob.job!.helpers![index - 1].mobile,
-                                color: Colors.brown[100]!,
+                                helperStatus: pendingJob
+                                    .job!.jobHelpers![index - 1].status,
+                                color: Colors.brown[50]!,
                               ),
                             ));
                       } else {
@@ -194,7 +197,9 @@ class _BookingInProgressState extends State<PendingBooking>
                                       pendingJob.job!.helpers![index - 1].email,
                                   helperContact: pendingJob
                                       .job!.helpers![index - 1].mobile,
-                                  color: Colors.grey[100]!,
+                                  helperStatus: pendingJob
+                                      .job!.jobHelpers![index - 1].status,
+                                  color: Colors.grey[50]!,
                                 ),
                               ));
                         } else {

@@ -40,6 +40,19 @@ class WebAPIs {
     return null;
   }
 
+  static Future<Map<String, dynamic>?> forgotPassword(
+      {required String email}) async {
+    Response r = await post(
+      Uri.parse(baseURL + 'forgotPassword'),
+      body: {"email": email},
+    );
+
+    if (r.statusCode == 200) {
+      return json.decode(r.body);
+    }
+    return json.decode(r.body);
+  }
+
   static Future<Map<String, dynamic>?> getJobDetails(
       {required int jobId}) async {
     Response r = await get(

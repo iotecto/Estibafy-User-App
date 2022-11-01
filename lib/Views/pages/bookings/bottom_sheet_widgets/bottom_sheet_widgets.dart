@@ -58,7 +58,9 @@ Widget allHelperAcceptedCard(
 }
 
 Widget bottomSheetHeader(
-    {required String jobId, required String totalHelpers}) {
+    {required String jobId,
+    required String totalHelpers,
+    required String title}) {
   return Container(
     height: 90.0,
     decoration: BoxDecoration(
@@ -82,9 +84,9 @@ Widget bottomSheetHeader(
           const SizedBox(
             height: 6.0,
           ),
-          const Text(
-            'Confirmed Helpers',
-            style: TextStyle(
+          Text(
+            title,
+            style: const TextStyle(
                 fontSize: 12, fontWeight: FontWeight.w900, color: Colors.grey),
           ),
           Align(
