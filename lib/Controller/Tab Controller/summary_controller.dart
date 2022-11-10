@@ -8,12 +8,14 @@ class SummaryController extends GetxController {
 
   Future<int?> jobCheckout({
     required int helperCount,
+    required int paymentMethod,
     required Map<String, dynamic> data,
   }) async {
     EasyLoading.show();
     print("calling job checkout api");
     Map<String, dynamic>? response = await WebAPIs.jobCheckout(
       jobID: data['job_id'].toString(),
+      paymentMethod: paymentMethod,
       // packageType: data['job_detail']['package_type'],
       // startTime: data['job_detail']['start_time'],
       //endTime: data['job_detail']['end_time'],
