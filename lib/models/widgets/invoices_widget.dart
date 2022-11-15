@@ -34,7 +34,8 @@ Widget buildInvoicesCard(BuildContext context, Datum data, Function() onTap) {
                         child: CircleAvatar(
                           backgroundColor: K.fourthColor,
                           backgroundImage: NetworkImage(
-                              data.job!.jobHelpers![0].helperProfile!.image!),
+                              data.job!.jobHelpers![0].helperProfile?.image ??
+                                  ""),
                           radius: 26,
                         ),
                       ),
@@ -96,7 +97,8 @@ Widget buildInvoicesCard(BuildContext context, Datum data, Function() onTap) {
                             width: 5,
                           ),
                           Text(
-                              "${data.job!.jobHelpers![0].helperProfile!.email}",
+                              data.job!.jobHelpers![0].helperProfile?.email ??
+                                  "",
                               style: K.textStyle2),
                         ],
                       ),
@@ -113,7 +115,9 @@ Widget buildInvoicesCard(BuildContext context, Datum data, Function() onTap) {
                           const SizedBox(
                             width: 5,
                           ),
-                          Text(data.job!.jobHelpers![0].helperProfile!.mobile!,
+                          Text(
+                              data.job!.jobHelpers![0].helperProfile?.mobile ??
+                                  "",
                               style: K.textStyle2),
                         ],
                       ),
