@@ -172,20 +172,17 @@ class _BookingState extends State<Booking> with SingleTickerProviderStateMixin {
                                     ? BookingInProgress(
                                         data:
                                             data!['data']?['inprogress'] ?? [],
-                                        inProgress: 'in-progress',
                                         status: cupertinoTabBarIIIValue,
                                       )
                                     : cupertinoTabBarIIIValue == 2
                                         ? BookingInProgress(
                                             data:
                                                 data!['data']['complete'] ?? [],
-                                            inProgress: '',
                                             status: cupertinoTabBarIIIValue,
                                           )
                                         : BookingInProgress(
                                             data:
                                                 data!['data']['canceled'] ?? [],
-                                            inProgress: '',
                                             status: cupertinoTabBarIIIValue,
                                           ),
                   ),

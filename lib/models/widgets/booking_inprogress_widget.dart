@@ -53,6 +53,7 @@ class _BuildBookingInProgressCardState
           child: Column(
             children: [
               ExpansionTileCard(
+                finalPadding: EdgeInsets.zero,
                 animateTrailing: true,
                 key: jobCard,
                 title: Column(
@@ -73,13 +74,21 @@ class _BuildBookingInProgressCardState
                               ? "(in-review)"
                               : widget.job.status == "declined"
                                   ? "(declined)"
-                                  : "(accepted)",
+                                  : widget.job.status == "complete"
+                                      ? ""
+                                      : widget.job.status == "inprocess"
+                                          ? ''
+                                          : widget.job.status == "pending"
+                                              ? '(accepted)'
+                                              : '',
                           style: TextStyle(
                             color: widget.job.status == "inreview"
                                 ? Colors.orangeAccent
-                                : widget.job.status == "pending"
-                                    ? Colors.green
-                                    : Colors.red,
+                                : widget.job.status == "declined"
+                                    ? Colors.red
+                                    : widget.job.status == "complete"
+                                        ? Colors.green
+                                        : Colors.green,
                           ),
                         )
                       ],
@@ -270,7 +279,7 @@ class _BuildBookingInProgressCardState
                     ),
                   ),
                   const SizedBox(
-                    height: 5.0,
+                    height: 8.0,
                   ),
                 ],
               ),
