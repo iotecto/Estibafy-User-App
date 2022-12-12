@@ -72,6 +72,7 @@ class WebAPIs {
     // required String startTime,
     // required String endTime,
     required String totalHelpers,
+    required int paymentMethod,
     // required String address,
     // required String helpers,
   }) async {
@@ -80,6 +81,7 @@ class WebAPIs {
       //"package_type": packageType,
       //"start_time": startTime,
       //"end_time": endTime,
+      "payement_method": "$paymentMethod",
       "total_helpers": totalHelpers,
       //"address": address,
       // "helpers": helpers,

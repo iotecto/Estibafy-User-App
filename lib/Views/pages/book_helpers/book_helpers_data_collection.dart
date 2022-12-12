@@ -34,6 +34,7 @@ class _BookHelpersDataCollectionState extends State<BookHelpersDataCollection> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   File? _image;
+  String paymentMethod = 'Select';
 
   Future getCameraImage() async {
     final ImagePicker _picker = ImagePicker();
@@ -306,6 +307,59 @@ class _BookHelpersDataCollectionState extends State<BookHelpersDataCollection> {
                   const SizedBox(
                     height: 15,
                   ),
+                  Text(
+                    'Payment Method',
+                    style: K.textStyle3,
+                  ),
+                  DropdownButtonFormField(
+                    alignment: Alignment.center,
+                    itemHeight: 70,
+                    hint: const Text('Select'),
+                    items: [
+                      DropdownMenuItem(
+                        child: Row(
+                          children: [
+                            Image.asset(
+                              'assets/logo.png',
+                              scale: 25,
+                            ),
+                            const SizedBox(
+                              width: 8.0,
+                            ),
+                            const Text("Post-paid",
+                                textAlign: TextAlign.center),
+                          ],
+                        ),
+                        value: 0,
+                      ),
+                      DropdownMenuItem(
+                        child: Row(
+                          children: [
+                            Icon(
+                              Icons.payment_outlined,
+                              color: K.primaryColor,
+                            ),
+                            const SizedBox(
+                              width: 12.0,
+                            ),
+                            const Text("Card", textAlign: TextAlign.center),
+                          ],
+                        ),
+                        value: 1,
+                      )
+                    ],
+                    onChanged: (value) {
+                      if (value == 0) {
+                        bookHelperCollectionController.paymentMethod.value = 0;
+                      } else {
+                        bookHelperCollectionController.paymentMethod.value = 1;
+                        K.showToast(message: 'Card method not Available..');
+                      }
+                    },
+                  ),
+                  const SizedBox(
+                    height: 20.0,
+                  ),
                   Row(
                     children: [
                       Text(
@@ -383,6 +437,20 @@ class _BookHelpersDataCollectionState extends State<BookHelpersDataCollection> {
                           return;
                         }
 
+                        if (bookHelperCollectionController
+                                .paymentMethod.value ==
+                            2) {
+                          K.showToast(message: 'Payment Method Invalid');
+                          return;
+                        }
+                        if (bookHelperCollectionController
+                                .paymentMethod.value ==
+                            1) {
+                          K.showToast(
+                              message: 'Card method will not available!');
+                          return;
+                        }
+
                         MpController mpController = Get.put(MpController());
 
                         if (mpController.isMapSelected.value) {
@@ -393,34 +461,36 @@ class _BookHelpersDataCollectionState extends State<BookHelpersDataCollection> {
                           bookHelperCollectionController.bidones.value = false;
                           bookHelperCollectionController.others.value = false;
                           bookHelperCollectionController.bookHelper(
-                            voicemail: null,
-                            jobId: bookHelperCollectionController.jobId,
-                            jobName: bookHelperCollectionController
-                                .jobNameController.text,
-                            jobAddress:
-                                mpController.pickedUpResult.value.address,
-                            containerId:
-                                bookHelperCollectionController.containerId,
-                            packageType: bookHelperCollectionController
-                                .checkedValuesList
-                                .join(','),
-                            startTime: bookHelperCollectionController
-                                    .startDateController.text +
-                                " " +
-                                bookHelperCollectionController
-                                    .startTimeController.text,
-                            endTime: bookHelperCollectionController
-                                    .endDateController.text +
-                                " " +
-                                bookHelperCollectionController
-                                    .endTimeController.text,
-                            lat: mpController.pickedUpResult.value.latitude
-                                .toString(),
-                            lng: mpController.pickedUpResult.value.longitude
-                                .toString(),
-                            helperSize: bookHelperCollectionController.helpers,
-                            image: null,
-                          );
+                              voicemail: null,
+                              jobId: bookHelperCollectionController.jobId,
+                              jobName: bookHelperCollectionController
+                                  .jobNameController.text,
+                              jobAddress:
+                                  mpController.pickedUpResult.value.address,
+                              containerId:
+                                  bookHelperCollectionController.containerId,
+                              packageType: bookHelperCollectionController
+                                  .checkedValuesList
+                                  .join(','),
+                              startTime: bookHelperCollectionController
+                                      .startDateController.text +
+                                  " " +
+                                  bookHelperCollectionController
+                                      .startTimeController.text,
+                              endTime: bookHelperCollectionController
+                                      .endDateController.text +
+                                  " " +
+                                  bookHelperCollectionController
+                                      .endTimeController.text,
+                              lat: mpController.pickedUpResult.value.latitude
+                                  .toString(),
+                              lng: mpController.pickedUpResult.value.longitude
+                                  .toString(),
+                              helperSize:
+                                  bookHelperCollectionController.helpers,
+                              image: null,
+                              paymentMethod:
+                                  bookHelperCollectionController.paymentMethod);
                         } else {
                           K.showToast(
                               message: "Please Select location to continue");

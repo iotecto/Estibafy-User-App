@@ -393,6 +393,8 @@ class _SummaryState extends State<Summary> {
               function: () async {
                 int? result = await summaryController.jobCheckout(
                   data: widget.response,
+                  paymentMethod:
+                      bookHelperCollectionController.paymentMethod.value,
                   helperCount: widget.helperCount,
                 );
                 if (result != null) {

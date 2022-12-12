@@ -45,6 +45,8 @@ class BookHelperDataCollectionController extends GetxController {
 
   RxBool openBottomSheet = false.obs;
 
+  RxInt paymentMethod = 2.obs;
+
   //Cargo Type
   RxBool container20feet = false.obs;
   RxBool container40feet = false.obs;
@@ -68,6 +70,7 @@ class BookHelperDataCollectionController extends GetxController {
     required String lat,
     required String lng,
     required String helperSize,
+    required RxInt paymentMethod,
     File? image,
     File? voicemail,
   }) async {
@@ -90,6 +93,7 @@ class BookHelperDataCollectionController extends GetxController {
       );
 
       if (result != null) {
+        result['payment-method'] = paymentMethod;
         Get.bottomSheet(BookHelperSheet(response: result));
         // openBottomSheet.value = true;
       } else {

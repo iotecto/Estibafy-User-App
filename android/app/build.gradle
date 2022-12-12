@@ -6,7 +6,6 @@ if (localPropertiesFile.exists()) {
     }
 }
 
-
 def keystoreProperties = new Properties()
 def keystorePropertiesFile = rootProject.file('key.properties')
 if (keystorePropertiesFile.exists()) {
@@ -54,7 +53,7 @@ android {
         applicationId "estibafy.com.estibafy_user"
         minSdkVersion 22
         targetSdkVersion flutter.targetSdkVersion
-        versionCode 8
+        versionCode 9
         versionName flutterVersionName
     }
 

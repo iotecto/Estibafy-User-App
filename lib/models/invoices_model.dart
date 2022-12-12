@@ -277,7 +277,9 @@ class JobHelper {
         approvedBy: json["approved_by"],
         createdAt: DateTime.parse(json["created_at"]),
         updatedAt: DateTime.parse(json["updated_at"]),
-        helperProfile: HelperProfile.fromJson(json["helper_profile"]),
+        helperProfile: json["helper_profile"] == null
+            ? HelperProfile()
+            : HelperProfile.fromJson(json["helper_profile"]),
       );
 
   Map<String, dynamic> toJson() => {
