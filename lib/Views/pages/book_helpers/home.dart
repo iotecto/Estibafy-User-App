@@ -20,6 +20,25 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
+  LatLng currentLocation = const LatLng(40.937100, -73.050480);
+
+  Future userCurrentLocation() async {
+    await Geolocator.requestPermission();
+    Position position = await Geolocator.getCurrentPosition(
+      desiredAccuracy: LocationAccuracy.high,
+    );
+    setState(() {
+      currentLocation = LatLng(position.latitude, position.longitude);
+    });
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    userCurrentLocation();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     final UserController _userController = Get.find(tag: K.userControllerTag);
@@ -43,7 +62,7 @@ class _HomeState extends State<Home> {
             ),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.710,
-              child: googleMapLocationPicker(context),
+              child: googleMapLocationPicker(context, currentLocation),
             ),
           ],
         ),
@@ -52,9 +71,10 @@ class _HomeState extends State<Home> {
   }
 }
 
-Widget googleMapLocationPicker(BuildContext context) {
+Widget googleMapLocationPicker(BuildContext context, LatLng location) {
   return MapLocationPicker(
     bottomCardColor: K.primaryColor,
+    currentLatLng: location,
     showBackButton: false,
     desiredAccuracy: LocationAccuracy.high,
     bottomCardIcon: Icon(

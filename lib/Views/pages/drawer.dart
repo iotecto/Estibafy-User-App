@@ -2,7 +2,6 @@ import 'package:estibafy_user/Controller/user_controller.dart';
 import 'package:estibafy_user/Views/pages/bookings/booking.dart';
 import 'package:estibafy_user/Views/pages/profile/profile.dart';
 import 'package:estibafy_user/Views/pages/settings/settings_screen.dart';
-import 'package:estibafy_user/Views/pages/tracking.dart';
 import 'package:estibafy_user/models/utils/constants.dart';
 import 'package:estibafy_user/models/widgets/drawer_tile.dart';
 import 'package:flutter/material.dart';
@@ -208,12 +207,12 @@ class SideDrawer extends StatelessWidget {
                           //       Get.to(const HelpersTabBar());
                           //     },
                           //     icon: Icons.favorite),
-                          Tile(
-                              text: 'Map',
-                              function: () {
-                                Get.to(Tracking());
-                              },
-                              icon: Icons.map),
+                          // Tile(
+                          //     text: 'Map',
+                          //     function: () {
+                          //       Get.to(Tracking());
+                          //     },
+                          //     icon: Icons.map),
                           // Tile(
                           //     text: 'Address',
                           //     function: () {},

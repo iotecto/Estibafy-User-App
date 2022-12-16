@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 
 import '../../../models/utils/constants.dart';
 import '../../../models/widgets/appbar.dart';
+import 'language_screen.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({Key? key}) : super(key: key);
@@ -27,77 +28,35 @@ class _SettingsScreenState extends State<SettingsScreen> {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            Align(
-              alignment: Alignment.centerLeft,
-              child: const Text(
-                'Choose Language',
-                style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w800),
-              ).tr(),
-            ),
-            const SizedBox(
-              height: 3.0,
-            ),
-            Material(
-              borderRadius: BorderRadius.circular(15.0),
-              elevation: 5.0,
-              child: Container(
-                width: double.infinity,
-                padding: const EdgeInsets.all(12.0),
-                decoration: BoxDecoration(
-                    color: K.secondaryColor,
-                    borderRadius: BorderRadius.circular(15.0)),
-                child: Column(
-                  children: [
-                    Row(
+            InkWell(
+              onTap: () {
+                Get.to(const LanguageScreen());
+              },
+              child: Material(
+                borderRadius: BorderRadius.circular(15.0),
+                elevation: 5.0,
+                child: Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(12.0),
+                    decoration: BoxDecoration(
+                        color: K.secondaryColor,
+                        borderRadius: BorderRadius.circular(15.0)),
+                    child: Row(
                       children: [
-                        const Text(
-                          'English',
-                          style: TextStyle(
-                            fontSize: 14,
-                          ),
-                        ).tr(),
-                        const Spacer(),
-                        Obx(
-                          () => Radio(
-                            value: _settingsController.englishLanguage.value,
-                            onChanged: (value) async {
-                              _settingsController.updateUserLanguage(
-                                  context, 'English');
-                            },
-                            groupValue: true,
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 8.0),
+                          child: Text(
+                            "Change Language",
+                            style: K.textStyle1,
                           ),
                         ),
-                      ],
-                    ),
-                    const Divider(),
-                    Row(
-                      children: [
-                        const Text(
-                          'Spanish',
-                          style: TextStyle(
-                            fontSize: 14,
-                          ),
-                        ).tr(),
                         const Spacer(),
-                        Obx(
-                          () => Radio(
-                            value: _settingsController.spanishLanguage.value,
-                            onChanged: (value) async {
-                              _settingsController.updateUserLanguage(
-                                  context, 'Spanish');
-                            },
-                            groupValue: true,
-                          ),
-                        ),
+                        const Icon(Icons.arrow_forward_ios_sharp)
                       ],
-                    ),
-                  ],
-                ),
+                    )),
               ),
             ),
-            const SizedBox(
-              height: 30.0,
-            ),
+            Spacer(),
             MaterialButton(
               color: Colors.redAccent,
               onPressed: () {
@@ -107,6 +66,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 'Delete Account',
                 style: TextStyle(color: Colors.white),
               ).tr(),
+            ),
+            const SizedBox(
+              height: 30.0,
             ),
           ],
         ),
