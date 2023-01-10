@@ -190,7 +190,7 @@ class _BuildBookingInProgressCardState
                         reusableJobItem(
                             title: 'Package Type',
                             icon: CupertinoIcons.cube_box,
-                            detail: '${job.job!.packageType}, Height',
+                            detail: '${job.job!.packageType}',
                             textStyle:
                                 K.textStyle2.copyWith(color: K.fourthColor),
                             cardWidth:

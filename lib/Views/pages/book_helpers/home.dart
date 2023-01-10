@@ -22,23 +22,6 @@ class _HomeState extends State<Home> {
 
   LatLng currentLocation = const LatLng(40.937100, -73.050480);
 
-  Future userCurrentLocation() async {
-    await Geolocator.requestPermission();
-    Position position = await Geolocator.getCurrentPosition(
-      desiredAccuracy: LocationAccuracy.high,
-    );
-    setState(() {
-      currentLocation = LatLng(position.latitude, position.longitude);
-    });
-  }
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    userCurrentLocation();
-    super.initState();
-  }
-
   @override
   Widget build(BuildContext context) {
     final UserController _userController = Get.find(tag: K.userControllerTag);
@@ -62,61 +45,61 @@ class _HomeState extends State<Home> {
             ),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.710,
-              child: googleMapLocationPicker(context, currentLocation),
+              child: googleMapLocationPicker(context),
             ),
           ],
         ),
       ),
     );
   }
-}
 
-Widget googleMapLocationPicker(BuildContext context, LatLng location) {
-  return MapLocationPicker(
-    bottomCardColor: K.primaryColor,
-    currentLatLng: location,
-    showBackButton: false,
-    desiredAccuracy: LocationAccuracy.high,
-    bottomCardIcon: Icon(
-      Icons.forward,
-      color: K.secondaryColor,
-    ),
-    apiKey: K.googleMapApiKey,
-    onNext: (GeocodingResult? result) {
-      MpController mpController = Get.put(MpController());
-      mpController.setMapLocation(
-          result!.geometry.location.lat,
-          result.geometry.location.lng,
-          result.formattedAddress.toString(),
-          true);
-      PersistentNavBarNavigator.pushNewScreen(
-        context,
-        screen: const BookHelpersDataCollection(),
-        withNavBar: true,
-      );
-    },
-  );
-  // return MapLocationPicker(
-  //   showMoreOptions: false,
-  //   desiredAccuracy: LocationAccuracy.best,
-  //   minMaxZoomPreference: const MinMaxZoomPreference(8, 30),
-  //   bottomCardColor: K.primaryColor,
-  //   bottomCardIcon: Icon(
-  //     Icons.navigate_next_outlined,
-  //     color: K.secondaryColor,
-  //   ),
-  //   searchHintText: 'Search or Pick Location',
-  //   apiKey: K.googleMapApiKey,
-  //   showBackButton: false,
-  //   compassEnabled: false,
-  //   canPopOnNextButtonTaped: false,
-  //   onNext: (LatLng? result, GeocodingResult? address) {
-  //     log(result!.latitude.toString());
-  //     log(result.longitude.toString());
-  //
-  //   },
-  //   onSuggestionSelected: (PlacesDetailsResponse? result) {
-  //     if (result != null) {}
-  //   },
-  // );
+  Widget googleMapLocationPicker(BuildContext context) {
+    return MapLocationPicker(
+      bottomCardColor: K.primaryColor,
+      currentLatLng: currentLocation,
+      showBackButton: false,
+      desiredAccuracy: LocationAccuracy.high,
+      bottomCardIcon: Icon(
+        Icons.forward,
+        color: K.secondaryColor,
+      ),
+      apiKey: K.googleMapApiKey,
+      onNext: (GeocodingResult? result) {
+        MpController mpController = Get.put(MpController());
+        mpController.setMapLocation(
+            result!.geometry.location.lat,
+            result.geometry.location.lng,
+            result.formattedAddress.toString(),
+            true);
+        PersistentNavBarNavigator.pushNewScreen(
+          context,
+          screen: const BookHelpersDataCollection(),
+          withNavBar: true,
+        );
+      },
+    );
+    // return MapLocationPicker(
+    //   showMoreOptions: false,
+    //   desiredAccuracy: LocationAccuracy.best,
+    //   minMaxZoomPreference: const MinMaxZoomPreference(8, 30),
+    //   bottomCardColor: K.primaryColor,
+    //   bottomCardIcon: Icon(
+    //     Icons.navigate_next_outlined,
+    //     color: K.secondaryColor,
+    //   ),
+    //   searchHintText: 'Search or Pick Location',
+    //   apiKey: K.googleMapApiKey,
+    //   showBackButton: false,
+    //   compassEnabled: false,
+    //   canPopOnNextButtonTaped: false,
+    //   onNext: (LatLng? result, GeocodingResult? address) {
+    //     log(result!.latitude.toString());
+    //     log(result.longitude.toString());
+    //
+    //   },
+    //   onSuggestionSelected: (PlacesDetailsResponse? result) {
+    //     if (result != null) {}
+    //   },
+    // );
+  }
 }

@@ -2,6 +2,7 @@ import 'package:animated_check/animated_check.dart';
 import 'package:auto_animated/auto_animated.dart';
 import 'package:estibafy_user/Views/pages/bookings/bottom_sheet_widgets/bottom_sheet_widgets.dart';
 import 'package:estibafy_user/models/booking_model.dart';
+import 'package:estibafy_user/models/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 import '../../../Views/pages/bookings/job_accepted_widget/job_accpted_helper_widget.dart';
@@ -101,7 +102,9 @@ class _BookingInProgressState extends State<PendingBooking>
               }
               if (ifAllHelpersBooked) {
                 return Container(
-                  color: Colors.blueGrey[100],
+                  decoration: BoxDecoration(
+                      color: K.primaryColor,
+                      borderRadius: BorderRadius.horizontal(left: Radius.circular(10.0))),
                   child: ListView.builder(
                     itemCount: 1,
                     itemBuilder: (context, index) {
@@ -137,7 +140,9 @@ class _BookingInProgressState extends State<PendingBooking>
                 );
               } else {
                 return Container(
-                  color: Colors.blueGrey[100],
+                  decoration: BoxDecoration(
+                      color: K.primaryColor,
+                      borderRadius: BorderRadius.circular(8.0)),
                   child: LiveGrid.options(
                     controller: scrollController,
                     options: const LiveOptions(
@@ -154,31 +159,40 @@ class _BookingInProgressState extends State<PendingBooking>
                             totalHelpers: '${pendingJob.totalHelpers}',
                             title: 'Confirmed Helpers');
                       } else if (index.floor().isEven) {
-                        return FadeTransition(
-                            opacity: Tween<double>(
-                              begin: 0,
-                              end: 1,
-                            ).animate(animation),
-                            child: SlideTransition(
-                              position: Tween<Offset>(
-                                begin: const Offset(0, 0.1),
-                                end: Offset.zero,
+                        if (pendingJob.job!.helpers!.isNotEmpty) {
+                          return FadeTransition(
+                              opacity: Tween<double>(
+                                begin: 0,
+                                end: 1,
                               ).animate(animation),
-                              child: JobAcceptedHelpersWidget(
-                                helperImage: 'assets/logo.png',
-                                helperName:
-                                    pendingJob.job!.helpers![index - 1].name,
-                                helperEmail:
-                                    pendingJob.job!.helpers![index - 1].email,
-                                helperContact:
-                                    pendingJob.job!.helpers![index - 1].mobile,
-                                helperStatus: pendingJob
-                                    .job!.jobHelpers![index - 1].status,
-                                color: Colors.brown[50]!,
-                              ),
-                            ));
+                              child: SlideTransition(
+                                position: Tween<Offset>(
+                                  begin: const Offset(0, 0.1),
+                                  end: Offset.zero,
+                                ).animate(animation),
+                                child: JobAcceptedHelpersWidget(
+                                  helperImage: 'assets/logo.png',
+                                  helperName:
+                                      pendingJob.job!.helpers![index - 1].name,
+                                  helperEmail:
+                                      pendingJob.job!.helpers![index - 1].email,
+                                  helperContact: pendingJob
+                                      .job!.helpers![index - 1].mobile,
+                                  helperStatus: pendingJob
+                                      .job!.jobHelpers![index - 1].status,
+                                  color: Colors.brown[50]!,
+                                ),
+                              ));
+                        } else {
+                          return Center(
+                            child: const Text(
+                              'This Job is not Accepted \n by any helper yet!',
+                              textAlign: TextAlign.center,
+                            ),
+                          );
+                        }
                       } else {
-                        if (pendingJob.job!.helpers != null) {
+                        if (pendingJob.job!.helpers!.isNotEmpty) {
                           return FadeTransition(
                               opacity: Tween<double>(
                                 begin: 0,

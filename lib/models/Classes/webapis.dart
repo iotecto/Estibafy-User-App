@@ -239,12 +239,12 @@ class WebAPIs {
         return true;
       } else {
         String errorMessage =
-            body['message']['mobile'][0]; //getErrorMessage(body['message']);
+            body['message']; //getErrorMessage(body['message']);
         K.showToast(message: errorMessage);
         return false;
       }
     } catch (e) {
-      K.showToast(message: '$e');
+      print(e);
       return false;
     }
   }

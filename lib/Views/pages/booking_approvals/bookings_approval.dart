@@ -40,10 +40,12 @@ class _BookingState extends State<ApprovalBooking>
     }
 
     WebAPIs.getJobs().then((value) {
-      setState(() {
-        data = value;
-        isLoaded = true;
-      });
+      if (mounted) {
+        setState(() {
+          data = value;
+          isLoaded = true;
+        });
+      }
     });
   }
 
