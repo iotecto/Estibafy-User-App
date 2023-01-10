@@ -55,6 +55,7 @@ class _HomeState extends State<Home> {
 
   Widget googleMapLocationPicker(BuildContext context) {
     return MapLocationPicker(
+
       bottomCardColor: K.primaryColor,
       currentLatLng: currentLocation,
       showBackButton: false,
