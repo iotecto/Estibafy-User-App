@@ -74,143 +74,145 @@ class _BookingInProgressState extends State<BookingInProgress>
                 },
               )
             : const Center(
-                child: Text("No booking available"),
+                child: Text("There is no job"),
               ),
-        widget.data[0]['status'] == 'complete'
+        widget.data.isEmpty
             ? const SizedBox.shrink()
-            : DraggableScrollableSheet(
-                initialChildSize: 0.080,
-                minChildSize: 0.080,
-                maxChildSize: 1,
-                snap: true,
-                controller: _controller,
-                snapSizes: const [0.4, 1],
-                builder:
-                    (BuildContext context, ScrollController scrollController) {
-                  Pending pendingJob = listData[0];
+            : widget.data[0]['status'] == 'complete'
+                ? const SizedBox.shrink()
+                : DraggableScrollableSheet(
+                    initialChildSize: 0.080,
+                    minChildSize: 0.080,
+                    maxChildSize: 1,
+                    snap: true,
+                    controller: _controller,
+                    snapSizes: const [0.4, 1],
+                    builder: (BuildContext context,
+                        ScrollController scrollController) {
+                      Pending pendingJob = listData[0];
 
-                  // if (ifAllHelpersBooked) {
-                  //   return Container(
-                  //     color: Colors.blueGrey[100],
-                  //     child: ListView.builder(
-                  //       itemCount: 1,
-                  //       itemBuilder: (context, index) {
-                  //         double value = scrollController.position.viewportDimension;
-                  //         if (value > 200) {
-                  //           bottomSheetOpened = !bottomSheetOpened;
-                  //           if (bottomSheetOpened) {
-                  //             _controller.animateTo(1.0,
-                  //                 duration: const Duration(microseconds: 300),
-                  //                 curve: Curves.bounceOut);
-                  //             Future.delayed(const Duration(microseconds: 500),
-                  //                 () => animationController.forward());
-                  //           }
-                  //         } else {
-                  //           animationController.reverse();
-                  //         }
-                  //         return allHelperAcceptedCard(
-                  //             avatarChild: AnimatedCheck(
-                  //               progress: _animation,
-                  //               size: 100,
-                  //               color: Colors.white,
-                  //             ),
-                  //             onPress: () {
-                  //               _controller.animateTo(0.06,
-                  //                   duration: const Duration(microseconds: 300),
-                  //                   curve: Curves.bounceIn);
-                  //               ifAllHelpersBooked = false;
-                  //             });
-                  //       },
-                  //       controller: scrollController,
-                  //     ),
-                  //   );
+                      // if (ifAllHelpersBooked) {
+                      //   return Container(
+                      //     color: Colors.blueGrey[100],
+                      //     child: ListView.builder(
+                      //       itemCount: 1,
+                      //       itemBuilder: (context, index) {
+                      //         double value = scrollController.position.viewportDimension;
+                      //         if (value > 200) {
+                      //           bottomSheetOpened = !bottomSheetOpened;
+                      //           if (bottomSheetOpened) {
+                      //             _controller.animateTo(1.0,
+                      //                 duration: const Duration(microseconds: 300),
+                      //                 curve: Curves.bounceOut);
+                      //             Future.delayed(const Duration(microseconds: 500),
+                      //                 () => animationController.forward());
+                      //           }
+                      //         } else {
+                      //           animationController.reverse();
+                      //         }
+                      //         return allHelperAcceptedCard(
+                      //             avatarChild: AnimatedCheck(
+                      //               progress: _animation,
+                      //               size: 100,
+                      //               color: Colors.white,
+                      //             ),
+                      //             onPress: () {
+                      //               _controller.animateTo(0.06,
+                      //                   duration: const Duration(microseconds: 300),
+                      //                   curve: Curves.bounceIn);
+                      //               ifAllHelpersBooked = false;
+                      //             });
+                      //       },
+                      //       controller: scrollController,
+                      //     ),
+                      //   );
 
-                  return Container(
-                    color: Colors.blueGrey[100],
-                    child: LiveGrid.options(
-                      controller: scrollController,
-                      options: const LiveOptions(
-                        delay: Duration(milliseconds: 100),
-                        showItemInterval: Duration(milliseconds: 100),
-                        showItemDuration: Duration(milliseconds: 200),
-                        visibleFraction: 0.05,
-                        reAnimateOnVisibility: true,
-                      ),
-                      itemBuilder: (context, index, animation) {
-                        if (index == 0) {
-                          return bottomSheetHeader(
-                              jobId: '${pendingJob.jobId}',
-                              totalHelpers: '${pendingJob.totalHelpers}',
-                              title: 'Started Helpers');
-                        } else if (index.floor().isEven) {
-                          return FadeTransition(
-                              opacity: Tween<double>(
-                                begin: 0,
-                                end: 1,
-                              ).animate(animation),
-                              child: SlideTransition(
-                                position: Tween<Offset>(
-                                  begin: const Offset(0, 0.1),
-                                  end: Offset.zero,
-                                ).animate(animation),
-                                child: JobAcceptedHelpersWidget(
-                                  helperImage: 'assets/logo.png',
-                                  helperName:
-                                      pendingJob.job!.helpers![index - 1].name,
-                                  helperEmail:
-                                      pendingJob.job!.helpers![index - 1].email,
-                                  helperContact: pendingJob
-                                      .job!.helpers![index - 1].mobile,
-                                  helperStatus: pendingJob
-                                      .job!.jobHelpers![index - 1].status,
-                                  color: Colors.brown[50]!,
-                                ),
-                              ));
-                        } else {
-                          if (pendingJob.job!.helpers != null) {
-                            return FadeTransition(
-                                opacity: Tween<double>(
-                                  begin: 0,
-                                  end: 1,
-                                ).animate(animation),
-                                child: SlideTransition(
-                                  position: Tween<Offset>(
-                                    begin: const Offset(0, 0.1),
-                                    end: Offset.zero,
+                      return Container(
+                        color: Colors.blueGrey[100],
+                        child: LiveGrid.options(
+                          controller: scrollController,
+                          options: const LiveOptions(
+                            delay: Duration(milliseconds: 100),
+                            showItemInterval: Duration(milliseconds: 100),
+                            showItemDuration: Duration(milliseconds: 200),
+                            visibleFraction: 0.05,
+                            reAnimateOnVisibility: true,
+                          ),
+                          itemBuilder: (context, index, animation) {
+                            if (index == 0) {
+                              return bottomSheetHeader(
+                                  jobId: '${pendingJob.jobId}',
+                                  totalHelpers: '${pendingJob.totalHelpers}',
+                                  title: 'Started Helpers');
+                            } else if (index.floor().isEven) {
+                              return FadeTransition(
+                                  opacity: Tween<double>(
+                                    begin: 0,
+                                    end: 1,
                                   ).animate(animation),
-                                  child: JobAcceptedHelpersWidget(
-                                    helperImage: 'assets/logo.png',
-                                    helperName: pendingJob
-                                        .job!.helpers![index - 1].name,
-                                    helperEmail: pendingJob
-                                        .job!.helpers![index - 1].email,
-                                    helperContact: pendingJob
-                                        .job!.helpers![index - 1].mobile,
-                                    helperStatus: pendingJob
-                                        .job!.jobHelpers![index - 1].status,
-                                    color: Colors.grey[50]!,
+                                  child: SlideTransition(
+                                    position: Tween<Offset>(
+                                      begin: const Offset(0, 0.1),
+                                      end: Offset.zero,
+                                    ).animate(animation),
+                                    child: JobAcceptedHelpersWidget(
+                                      helperImage: 'assets/logo.png',
+                                      helperName: pendingJob
+                                          .job!.helpers![index - 1].name,
+                                      helperEmail: pendingJob
+                                          .job!.helpers![index - 1].email,
+                                      helperContact: pendingJob
+                                          .job!.helpers![index - 1].mobile,
+                                      helperStatus: pendingJob
+                                          .job!.jobHelpers![index - 1].status,
+                                      color: Colors.brown[50]!,
+                                    ),
+                                  ));
+                            } else {
+                              if (pendingJob.job!.helpers != null) {
+                                return FadeTransition(
+                                    opacity: Tween<double>(
+                                      begin: 0,
+                                      end: 1,
+                                    ).animate(animation),
+                                    child: SlideTransition(
+                                      position: Tween<Offset>(
+                                        begin: const Offset(0, 0.1),
+                                        end: Offset.zero,
+                                      ).animate(animation),
+                                      child: JobAcceptedHelpersWidget(
+                                        helperImage: 'assets/logo.png',
+                                        helperName: pendingJob
+                                            .job!.helpers![index - 1].name,
+                                        helperEmail: pendingJob
+                                            .job!.helpers![index - 1].email,
+                                        helperContact: pendingJob
+                                            .job!.helpers![index - 1].mobile,
+                                        helperStatus: pendingJob
+                                            .job!.jobHelpers![index - 1].status,
+                                        color: Colors.grey[50]!,
+                                      ),
+                                    ));
+                              } else {
+                                return Center(
+                                  child: const Text(
+                                    'This Job is not Accepted \n by any helper yet!',
+                                    textAlign: TextAlign.center,
                                   ),
-                                ));
-                          } else {
-                            return Center(
-                              child: const Text(
-                                'This Job is not Accepted \n by any helper yet!',
-                                textAlign: TextAlign.center,
-                              ),
-                            );
-                          }
-                        }
-                      },
-                      itemCount: (pendingJob.job!.helpers?.length ?? 0) + 1,
-                      gridDelegate:
-                          const SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 1,
-                        childAspectRatio: 4.0,
-                      ),
-                    ),
-                  );
-                },
-              )
+                                );
+                              }
+                            }
+                          },
+                          itemCount: (pendingJob.job!.helpers?.length ?? 0) + 1,
+                          gridDelegate:
+                              const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 1,
+                            childAspectRatio: 4.0,
+                          ),
+                        ),
+                      );
+                    },
+                  )
       ],
     ));
   }

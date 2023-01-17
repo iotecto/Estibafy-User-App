@@ -83,7 +83,7 @@ class _BookingInProgressState extends State<PendingBooking>
                   },
                 )
               : const Center(
-                  child: Text("No booking available"),
+                  child: Text("There is no job"),
                 ),
           DraggableScrollableSheet(
             initialChildSize: 0.080,
@@ -93,18 +93,24 @@ class _BookingInProgressState extends State<PendingBooking>
             controller: _controller,
             snapSizes: const [0.4, 1],
             builder: (BuildContext context, ScrollController scrollController) {
-              Pending pendingJob = listData[0];
-              if (pendingJob.job!.helpers != null) {
-                if (pendingJob.totalHelpers ==
-                    pendingJob.job!.helpers?.length) {
-                  ifAllHelpersBooked = true;
+              Pending pendingJob = Pending();
+              if (listData.isNotEmpty) {
+                pendingJob = listData[0];
+              }
+              if (pendingJob.job != null) {
+                if (pendingJob.job!.helpers != null) {
+                  if (pendingJob.totalHelpers ==
+                      pendingJob.job!.helpers?.length) {
+                    ifAllHelpersBooked = true;
+                  }
                 }
               }
               if (ifAllHelpersBooked) {
                 return Container(
                   decoration: BoxDecoration(
                       color: K.primaryColor,
-                      borderRadius: BorderRadius.horizontal(left: Radius.circular(10.0))),
+                      borderRadius: const BorderRadius.horizontal(
+                          left: Radius.circular(10.0))),
                   child: ListView.builder(
                     itemCount: 1,
                     itemBuilder: (context, index) {
@@ -155,8 +161,12 @@ class _BookingInProgressState extends State<PendingBooking>
                     itemBuilder: (context, index, animation) {
                       if (index == 0) {
                         return bottomSheetHeader(
-                            jobId: '${pendingJob.jobId}',
-                            totalHelpers: '${pendingJob.totalHelpers}',
+                            jobId: pendingJob.jobId != null
+                                ? '${pendingJob.jobId}'
+                                : '0',
+                            totalHelpers: pendingJob.totalHelpers != null
+                                ? '${pendingJob.totalHelpers}'
+                                : "0",
                             title: 'Confirmed Helpers');
                       } else if (index.floor().isEven) {
                         if (pendingJob.job!.helpers!.isNotEmpty) {
@@ -226,7 +236,7 @@ class _BookingInProgressState extends State<PendingBooking>
                         }
                       }
                     },
-                    itemCount: (pendingJob.job!.helpers?.length ?? 0) + 1,
+                    itemCount: (pendingJob.job?.helpers?.length ?? 0) + 1,
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 1,
