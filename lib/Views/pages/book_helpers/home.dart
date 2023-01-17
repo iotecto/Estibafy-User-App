@@ -58,7 +58,7 @@ class _HomeState extends State<Home> {
       bottomCardColor: K.primaryColor,
       currentLatLng: currentLocation,
       showBackButton: false,
-      desiredAccuracy: LocationAccuracy.high,
+      desiredAccuracy: LocationAccuracy.best,
       bottomCardIcon: Icon(
         Icons.forward,
         color: K.secondaryColor,

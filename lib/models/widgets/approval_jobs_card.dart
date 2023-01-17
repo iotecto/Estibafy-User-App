@@ -51,7 +51,7 @@ class _BookingInProgressState extends State<ApprovalJobCard> {
                   },
                 )
               : const Center(
-                  child: Text("No booking available"),
+                  child: Text("There is no job"),
                 ),
         ],
       ),
