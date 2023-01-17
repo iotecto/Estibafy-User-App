@@ -12,6 +12,10 @@
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>estibafy.com.estibafyUser</string>
+	</array>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleLocalizations</key>
@@ -60,19 +64,19 @@
 		<string>_dartobservatory._tcp</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
-	<string>This app requires access to Camera.</string>
+	<string>This app requires access to Camera.To upload job images</string>
 	<key>NSLocalNetworkUsageDescription</key>
 	<string>Please Allow to use Local Network Permissions</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Always and when in use!</string>
+	<string>Always and when in use!To determine the job location</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Can I have location always?</string>
+	<string>Can I have location always?To determine the job location</string>
 	<key>NSLocationUsageDescription</key>
-	<string>Older devices need location.</string>
+	<string>Older devices need location.To determine the job location</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Permission to get your location</string>
+	<string>Permission to get your location. To determine the job location</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app requires access to photo library.</string>
+	<string>This app requires access to photo library.To upload job photos.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UIBackgroundModes</key>
