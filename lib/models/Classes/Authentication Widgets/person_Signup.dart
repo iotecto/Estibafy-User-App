@@ -1,5 +1,4 @@
 import 'package:country_code_picker/country_code_picker.dart';
-import 'package:email_validator/email_validator.dart';
 import 'package:estibafy_user/Controller/Authentication%20Screens%20Controllers/signup_controller.dart';
 import 'package:estibafy_user/Views/pages/terms_conditions.dart';
 import 'package:estibafy_user/models/Classes/Firebase/firebase_phone_auth.dart';
@@ -211,9 +210,8 @@ class _PersonSignUpState extends State<PersonSignUp> {
                           signUpController.phone == '' ||
                           signUpController.password == '') {
                         K.showToast(message: 'Enter all details first');
-                      } else if (EmailValidator.validate(
-                              signUpController.email) ==
-                          false) {
+                      } else if (!signUpController.email.contains('@') ||
+                          !signUpController.email.contains('.')) {
                         K.showToast(message: 'Invalid Email');
                       } else if (signUpController.password.length < 8) {
                         K.showToast(

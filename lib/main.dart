@@ -14,7 +14,6 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-//import 'package:map_location_picker/generated/l10n.dart' as location_picker;
 import 'package:sizer/sizer.dart';
 
 import 'Views/Authentication Screens/login.dart';
