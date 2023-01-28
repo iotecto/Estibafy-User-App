@@ -197,7 +197,10 @@ class _BookHelpersDataCollectionState extends State<BookHelpersDataCollection> {
                                         value: 1,
                                       )
                                     ],
-                                    onChanged: (value) {},
+                                    onChanged: (value) {
+                                      bookHelperCollectionController.container
+                                          .add(2);
+                                    },
                                     decoration: InputDecoration(
                                         border: OutlineInputBorder(
                                       borderRadius: BorderRadius.circular(15.0),

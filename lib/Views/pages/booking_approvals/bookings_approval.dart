@@ -71,7 +71,7 @@ class _BookingState extends State<ApprovalBooking>
                 ),
               ),
             ])
-          : getAppBar2('Post-Payments', _scaffoldKey, context),
+          : getAppBar3('Post-Payments', _scaffoldKey, context),
       key: _scaffoldKey,
       backgroundColor: K.secondaryColor,
       drawer: const SideDrawer(),
