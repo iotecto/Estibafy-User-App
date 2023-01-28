@@ -188,8 +188,8 @@ class _CompanySignUpState extends State<CompanySignUp> {
                     signUpController.phone == '' ||
                     signUpController.password == '') {
                   K.showToast(message: 'Enter all details first');
-                } else if (EmailValidator.validate(signUpController.email) ==
-                    false) {
+                } else if (!signUpController.email.contains('@') ||
+                          !signUpController.email.contains('.')) {
                   K.showToast(message: 'Invalid Email');
                 } else if (signUpController.password.length < 8) {
                   K.showToast(
